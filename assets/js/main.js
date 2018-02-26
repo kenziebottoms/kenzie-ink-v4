@@ -3,7 +3,11 @@
 const angular = require("angular");
 const ngRoute = require("angular-route");
 
-let myApp = angular.module("appName", [ngRoute]);
+angular.module("io", [ngRoute]);
 
 require("./router");
 require("./keys");
+
+require("./ctrl/home");
+
+require("./factory/rest");
