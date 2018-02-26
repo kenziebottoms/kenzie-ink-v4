@@ -11,5 +11,13 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
         });
     };
 
-    return { getBlog };
+    let getPost = id => {
+        return $q((resolve, reject) => {
+            $http.get(`${RESTDB.url}/blog/${id}?apikey=${RESTDB.key}`)
+                .then(({data}) => resolve(data))
+                .catch(err => reject(err));
+        });
+    };
+
+    return { getBlog, getPost };
 });

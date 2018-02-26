@@ -1,6 +1,20 @@
 body {
     font-family: "Assistant", sans-serif;
     margin: auto;
+    font-size: 18px;
+    background: #e7e7e7;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+#sidebar {
+    background: #fff;
+    position: fixed;
+    height: 100vh;
 }
 #blog {
     padding: 0;
@@ -24,5 +38,17 @@ body {
                 background: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.75) 100%);
             }
         }
+    }
+}
+#post {
+    img {
+        max-width: 100%;
+        margin: 1rem auto;
+        max-height: 70vh;
+    }
+    date {
+        font-weight: 300;
+        margin-bottom: .5rem;
+        display: block;
     }
 }

@@ -8,6 +8,7 @@ angular.module("io", [ngRoute]);
 require("./router");
 require("./keys");
 
-require("./ctrl/home");
+require("./ctrl/blog");
+require("./ctrl/post");
 
 require("./factory/rest");
