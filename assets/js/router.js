@@ -6,7 +6,7 @@ const myApp = angular.module("appName");
 myApp.config($routeProvider => {
     $routeProvider
         .when("/", {
-            templateUrl: "assets/js/partials/template.html",
-            controller: "controller"
+            templateUrl: "assets/js/partials/home.html",
+            controller: "HomepageCtrl"
         });
 });

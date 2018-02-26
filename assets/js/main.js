@@ -5,8 +5,5 @@ const ngRoute = require("angular-route");
 
 let myApp = angular.module("appName", [ngRoute]);
 
-require("./router.js");
-
-require("./ctrl/controllers");
-
-require("./factory/factories");
+require("./router");
+require("./keys");
