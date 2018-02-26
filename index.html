@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kenzie's Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body ng-app="io">
-    <div class="container my-3">
-        <div ng-view></div>
+    <div class="container-fluid row my-3">
+        <div class="col col-md-4 col-lg-3">
+            sidebar
+        </div>
+        <div class="col col-md-8 col-lg-9">
+            <div ng-view></div>
+        </div>
     </div>
     <script src="dist/bundle.js"></script>
 </body>
