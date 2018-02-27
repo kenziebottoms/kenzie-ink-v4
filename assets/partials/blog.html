@@ -1,0 +1,12 @@
+<div id="blog" class="row">
+    <div class="post col col-md-6 col-lg-4" ng-repeat="post in blog" style="background-image: url({{post.image}})">
+        <a href="#!/art/{{post._id}}">
+            <div class="overlay">
+                <h3>
+                    {{post.title}}
+                </h3>
+                <date>{{post.date*1000 | date:"longDate"}}</date>
+            </div>
+        </a>
+    </div>
+</div>

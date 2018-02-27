@@ -1,8 +1,20 @@
 "use strict";
 
 const angular = require("angular");
+const _ = require("lodash");
 
 angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
+    let getBlog = () => {
+        return $q((resolve, reject) => {
+            Promise.all([
+                getArt(),
+                getCode()
+            ]).then(results => {
+                resolve(_.sortBy(_.flatten(results), i => -i.date));
+            });
+        });
+    };
+
     let getArt = () => {
         return $q((resolve, reject) => {
             $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&sort=date&dir=-1`)
@@ -34,5 +46,5 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
         });
     };
 
-    return { getArt, getCode, getArtPost, getCodePost };
+    return { getBlog, getArt, getCode, getArtPost, getCodePost };
 });
