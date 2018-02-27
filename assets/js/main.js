@@ -7,6 +7,7 @@ angular.module("io", [ngRoute]);
 
 require("./router");
 require("./keys");
+require("./directives");
 
 require("./ctrl/blog");
 require("./ctrl/post");
