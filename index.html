@@ -10,7 +10,22 @@
 </head>
 <body ng-app="io">
     <div id="sidebar" >
-        sidebar
+        <ul>
+            <li>
+                <a href="/">kenzie.ink</a>
+            </li>
+            <li>
+                <a href="/#!/blog">blog</a>
+                <ul>
+                    <li>
+                        <a href="/#!/blog/art">art</a>
+                    </li>
+                    <li>
+                        <a href="/#!/blog/code">code</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div id="content">
         <div ng-view></div>
