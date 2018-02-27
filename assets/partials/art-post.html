@@ -1,6 +1,8 @@
 <div id="post" ng-show="post">
     <img ng-show="post.category!='code'" src="{{post.image}}">
-    <h3>{{post.title}}</h3>
-    <date>{{post.date*1000 | date:"longDate"}}</date>
-    <p ng-show="post.body">{{post.body}}</p>
+    <div class="body">
+        <h3>{{post.title}}</h3>
+        <date>{{post.date*1000 | date:"longDate"}}</date>
+        <p ng-show="post.body">{{post.body}}</p>
+    </div>
 </div>
