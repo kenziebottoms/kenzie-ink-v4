@@ -9,7 +9,9 @@ require("./router");
 require("./keys");
 require("./directives");
 
-require("./ctrl/blog");
-require("./ctrl/post");
+require("./ctrl/art");
+require("./ctrl/code");
+require("./ctrl/artPost");
+require("./ctrl/codePost");
 
 require("./factory/rest");
