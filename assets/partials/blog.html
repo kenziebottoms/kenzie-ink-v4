@@ -1,6 +1,6 @@
 <div id="blog">
     <div class="post" ng-repeat="post in blog" style="background-image: url({{post.image}})">
-        <a href="#!/art/{{post._id}}">
+        <a href="#!/{{post.link || post.script ? 'code' : 'art'}}/{{post._id}}">
             <div class="overlay">
                 <h3>
                     {{post.title}}
