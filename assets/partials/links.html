@@ -1,0 +1,10 @@
+<div id="links">
+    <div class="block" ng-repeat="category in links">
+        <h3>{{category.name}}</h3>
+        <ul>
+            <li ng-repeat="link in category.links">
+                <a target="blank" ng-href="{{link.url}}">{{link.name}}</a><span ng-show="link.desc">, {{link.desc}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

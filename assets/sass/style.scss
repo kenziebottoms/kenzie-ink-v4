@@ -162,7 +162,7 @@ a {
         }
     }
 }
-#resume {
+#resume, #links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 5rem;
@@ -171,6 +171,8 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .job, .block {
         background: #fff;
         padding: 1rem;
         h3 {
