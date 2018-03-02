@@ -11,6 +11,6 @@
     <div class="body">
         <h3>{{post.title}}</h3>
         <date>{{post.date*1000 | date:"longDate"}}</date>
-        <p ng-show="post.body">{{post.body}}</p>
+        <p ng-show="post.body" ng-bind-html="post.body"></p>
     </div>
 </div>

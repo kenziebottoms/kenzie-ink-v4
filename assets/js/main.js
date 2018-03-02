@@ -1,9 +1,8 @@
 "use strict";
 
 const angular = require("angular");
-const ngRoute = require("angular-route");
 
-angular.module("io", [ngRoute]);
+angular.module("io", [require("angular-route"), require('angular-sanitize')]);
 
 require("./router");
 require("./keys");

@@ -43,7 +43,7 @@ a {
             padding: 0;
             margin: 0;
             a {
-                padding: 1rem 1rem 0.5rem 1rem;
+                padding: .75rem .7rem 0.5rem .7rem;
                 color: $black;
                 display: block;
                 text-align: center;
@@ -55,7 +55,7 @@ a {
                     color: #fff;
                 }
                 i {
-                    font-size: 2.3rem;
+                    font-size: 1.75rem;
                     display: block;
                 }
                 label {
@@ -100,6 +100,11 @@ a {
         }
     }
 }
+#code {
+    .post {
+        background-position: top;
+    }
+}
 #post {
     height: 98vh;
     display: grid;
@@ -124,10 +129,10 @@ a {
     }
 }
 #post.code {
-    padding: 0 5rem;
+    padding: 1rem 5rem;
     grid-template-columns: 1fr 1fr;
     .body {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 }
 .loading {
