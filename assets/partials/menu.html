@@ -1,0 +1,38 @@
+<ul>
+    <li>
+        <a ng-class="{active: $route.current.activeTab == 'home'}" href="/">
+            <i class="material-icons">home</i>
+            <label>home</label>
+        </a>
+    </li>
+    <li>
+        <a ng-class="{active: $route.current.activeTab == 'blog'}" href="/#!/blog">
+            <i class="material-icons">rss_feed</i>
+            <label>blog</label>
+        </a>
+    </li>
+    <li ng-show="$route.current.activeTab == 'blog' || $route.current.activeTab == 'art' || $route.current.activeTab == 'code'">
+        <a ng-class="{active: $route.current.activeTab == 'art'}" class="sec" href="/#!/blog/art">
+            <i class="material-icons">color_lens</i>
+            <label>art</label>
+        </a>
+    </li>
+    <li ng-show="$route.current.activeTab == 'blog' || $route.current.activeTab == 'art' || $route.current.activeTab == 'code'">
+        <a ng-class="{active: $route.current.activeTab == 'code'}" class="sec" href="/#!/blog/code">
+            <i class="material-icons">code</i>
+            <label>code</label>
+        </a>
+    </li>
+    <li>
+        <a ng-class="{active: $route.current.activeTab == 'resume'}" href="/#!/resume">
+            <i class="material-icons">history</i>
+            <label>resum&eacute;</label>
+        </a>
+    </li>
+    <li>
+        <a ng-class="{active: $route.current.activeTab == 'contact'}" href="/#!/contact">
+            <i class="material-icons">info_outline</i>
+            <label>contact</label>
+        </a>
+    </li>
+</ul>

@@ -10,39 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body ng-app="io">
-    <div id="sidebar" >
-        <ul>
-            <li>
-                <a href="/">
-                    <i class="material-icons">home</i>
-                    <label>home</label>
-                </a>
-            </li>
-            <li>
-                <a href="/#!/blog">
-                    <i class="material-icons">rss_feed</i>
-                    <label>blog</label>
-                </a>
-            </li>
-            <li>
-                <a class="sec" href="/#!/blog/art">
-                    <i class="material-icons">color_lens</i>
-                    <label>art</label>
-                </a>
-            </li>
-            <li>
-                <a class="sec" href="/#!/blog/code">
-                    <i class="material-icons">code</i>
-                    <label>code</label>
-                </a>
-            </li>
-            <li>
-                <a href="/#!/contact">
-                    <i class="material-icons">info_outline</i>
-                    <label>contact</label>
-                </a>
-            </li>
-        </ul>
+    <div id="sidebar" ng-include="'assets/partials/menu.html'" ng-controller="MenuCtrl">
     </div>
     <div id="content">
         <div ng-view></div>

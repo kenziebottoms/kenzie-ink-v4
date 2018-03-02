@@ -9,6 +9,7 @@ require("./router");
 require("./keys");
 require("./directives");
 
+require("./ctrl/menu");
 require("./ctrl/blog");
 require("./ctrl/contact");
 require("./ctrl/art");
