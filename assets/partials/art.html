@@ -1,5 +1,6 @@
+<img class="loading" ng-show="!blog" src="assets/img/loading.svg">
 <div id="art">
-    <div class="art post" ng-repeat="post in art" style="background-image: url({{post.image}})">
+    <div class="art post" ng-repeat="post in blog" style="background-image: url({{post.image}})">
         <a href="#!/art/{{post._id}}">
             <div class="overlay">
                 <h3>
