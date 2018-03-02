@@ -6,24 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kenzie's Site</title>
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body ng-app="io">
     <div id="sidebar" >
         <ul>
             <li>
-                <a href="/">kenzie.ink</a>
+                <a href="/">
+                    <i class="material-icons">home</i>
+                    <label>home</label>
+                </a>
             </li>
             <li>
-                <a href="/#!/blog">blog</a>
-                <ul>
-                    <li>
-                        <a href="/#!/blog/art">art</a>
-                    </li>
-                    <li>
-                        <a href="/#!/blog/code">code</a>
-                    </li>
-                </ul>
+                <a href="/#!/blog">
+                    <i class="material-icons">rss_feed</i>
+                    <label>blog</label>
+                </a>
+            </li>
+            <li>
+                <a href="/#!/blog/art">
+                    <i class="material-icons">color_lens</i>
+                    <label>art</label>
+                </a>
+            </li>
+            <li>
+                <a href="/#!/blog/code">
+                    <i class="material-icons">code</i>
+                    <label>code</label>
+                </a>
             </li>
         </ul>
     </div>
