@@ -12,5 +12,13 @@
         <h3>{{post.title}}</h3>
         <date>{{post.date*1000 | date:"longDate"}}</date>
         <p ng-show="post.body" ng-bind-html="post.body"></p>
+        <a class="github" ng-show="post.github" href="{{post.github}}" target="blank">
+            <img src="assets/img/github.svg">
+            {{post.github.split(".com")[1]}}
+        </a>
+        <a class="link" ng-href="{{post.link}}" ng-show="post.link" target="blank">
+            <i class="material-icons">link</i>
+            {{post.link}}
+        </a>
     </div>
 </div>

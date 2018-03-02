@@ -1,5 +1,6 @@
 $black: #333;
 $green: #5fd3bb;
+$dark-green: #1b9b81;
 $bg: #e7e7e7;
 html {
     font-size: 20px;
@@ -20,11 +21,17 @@ date {
     display: block;
 }
 a {
+    color: $dark-green;
     text-decoration: none;
     &:hover {
         text-decoration: none;
         color: inherit;
     }
+}
+.loading {
+    margin: 5rem auto;
+    text-align: center;
+    display: block;
 }
 #sidebar {
     background: #fff;
@@ -133,12 +140,27 @@ a {
     grid-template-columns: 1fr 1fr;
     .body {
         padding: 0 1rem;
+        .link {
+            padding: .25rem 0;
+            i {
+                color: #333;
+                font-size: 2rem;
+                margin-right: .25rem;
+                vertical-align: middle;
+            }
+        }
+        .github {
+            padding: .25rem 0;
+            img {
+                height: 2rem;
+                width: 2rem;
+                margin-right: .5rem;
+            }
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
-}
-.loading {
-    margin: 5rem auto;
-    text-align: center;
-    display: block;
 }
 #resume {
     display: grid;
