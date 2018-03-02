@@ -3,7 +3,51 @@
 const angular = require("angular");
 
 angular.module("io").controller("LinksCtrl", function($scope) {
-    $scope.links = [
+    $scope.social = [
+        {
+            "name": "Code",
+            "links": [
+                {
+                    "name": "Github",
+                    "url": "https://github.com/kenziebottoms"
+                },
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/kenziebottoms"
+                },
+                {
+                    "name": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/mckenzie-bottoms"
+                },
+                {
+                    "name": "Codepen",
+                    "url": "https://codepen.io/kenziebottoms/"
+                }
+            ]
+        },
+        {
+            "name": "Art",
+            "links": [
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/kenziebottoms/"
+                },
+                {
+                    "name": "Tumblr",
+                    "url": "http://chokingontheirhalos.tumblr.com/tagged/portfolio"
+                },
+                {
+                    "name": "ArtStation",
+                    "url": "https://kenziebottoms.artstation.com/"
+                },
+                {
+                    "name": "Commissions",
+                    "url": "https://artistsnclients.com/people/kenziebottoms"
+                }
+            ]
+        }
+    ];
+    $scope.resources = [
         {
             "name": "Fonts",
             "links": [

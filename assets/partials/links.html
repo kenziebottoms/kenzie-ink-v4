@@ -1,10 +1,24 @@
 <div id="links">
-    <div class="block" ng-repeat="category in links">
-        <h3>{{category.name}}</h3>
-        <ul>
-            <li ng-repeat="link in category.links">
-                <a target="blank" ng-href="{{link.url}}">{{link.name}}</a><span ng-show="link.desc">, {{link.desc}}</span>
-            </li>
-        </ul>
+    <div class="block">
+        <h3>Find me</h3>
+        <div ng-repeat="category in social">
+            <h4>{{category.name}}</h4>
+            <ul>
+                <li ng-repeat="link in category.links">
+                    <a target="blank" ng-href="{{link.url}}">{{link.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="block">
+        <h3>Resources</h3>
+        <div ng-repeat="category in resources">
+            <h4>{{category.name}}</h4>
+            <ul>
+                <li ng-repeat="link in category.links">
+                    <a target="blank" ng-href="{{link.url}}">{{link.name}}</a><span ng-show="link.desc">, {{link.desc}}</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
