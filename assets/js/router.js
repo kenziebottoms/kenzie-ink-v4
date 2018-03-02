@@ -8,6 +8,10 @@ angular.module("io").config($routeProvider => {
             templateUrl: "assets/partials/blog.html",
             controller: "BlogCtrl"
         })
+        .when("/contact", {
+            templateUrl: "assets/partials/contact.html",
+            controller: "ContactCtrl"
+        })
         .when("/blog/art", {
             templateUrl: "assets/partials/art.html",
             controller: "ArtCtrl"

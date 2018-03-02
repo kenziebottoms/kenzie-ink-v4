@@ -10,6 +10,7 @@ require("./keys");
 require("./directives");
 
 require("./ctrl/blog");
+require("./ctrl/contact");
 require("./ctrl/art");
 require("./ctrl/code");
 require("./ctrl/artPost");
