@@ -14,6 +14,11 @@ angular.module("io").config($routeProvider => {
             controller: "BlogCtrl",
             activeTab: "blog"
         })
+        .when("/resume", {
+            templateUrl: "assets/partials/resume.html",
+            controller: "ResumeCtrl",
+            activeTab: "resume"
+        })
         .when("/contact", {
             templateUrl: "assets/partials/contact.html",
             controller: "ContactCtrl",
