@@ -1,8 +1,15 @@
 <div id="resume">
     <div class="job" ng-repeat="job in resume">
-        <h3>{{job.company}}</h3>
-        <date>{{job.date}}</date>
-        <h5>{{job.position}}</h5>
+        <h3>
+            {{job.company}}
+            <date>{{job.date}}</date>
+        </h3>
+        <h4>{{job.position}}</h4>
+        <ul>
+            <li ng-repeat="item in job.desc">
+                {{item}}
+            </li>
+        </ul>
         <div class="tech">
             <span class="tag" ng-repeat="item in job.tech">{{item}}</span>
         </div>
