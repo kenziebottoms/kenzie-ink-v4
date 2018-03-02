@@ -133,3 +133,22 @@ a {
     text-align: center;
     display: block;
 }
+#resume {
+    // column-count: 3;
+    // -webkit-column-break-inside: avoid;
+    // page-break-inside: avoid;
+    //      break-inside: avoid;
+    padding: 1rem;
+    .job {
+        background: #fff;
+        padding: 1rem;
+        .tech {
+            .tag {
+                margin-right: .5rem;
+                display: inline-block;
+                padding: .25rem .5rem;
+                background: #eee;
+            }
+        }
+    }
+}

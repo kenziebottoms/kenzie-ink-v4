@@ -11,6 +11,7 @@ require("./directives");
 
 require("./ctrl/menu");
 require("./ctrl/blog");
+require("./ctrl/resume");
 require("./ctrl/contact");
 require("./ctrl/art");
 require("./ctrl/code");
