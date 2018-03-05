@@ -13,7 +13,7 @@ Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v
 
 - [x] Resume/professional history
 - [ ] Header
-    - [ ] Logo
+    - [x] Logo
     - [x] Navigation
 - [ ] Footer
 - [x] Blog
@@ -24,3 +24,4 @@ Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v
 - [RestDB](https://restdb.io/)
 - [Imgur](https://imgur.com/)
 - [Material icons](https://material.io/icons/)
+- [SVOMG!](https://jakearchibald.github.io/svgomg/), Jake Archibald
