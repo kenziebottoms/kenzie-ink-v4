@@ -1,6 +1,5 @@
 "use strict";
 
-const angular = require("angular");
 const _ = require("lodash");
 
 angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {

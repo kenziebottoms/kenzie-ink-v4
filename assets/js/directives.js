@@ -1,6 +1,5 @@
 "use strict";
 
-const angular = require("angular");
 const $ = require("jquery");
 
 angular.module("io").directive("ngScript", () => {

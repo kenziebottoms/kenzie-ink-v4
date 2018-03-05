@@ -1,7 +1,5 @@
 "use strict";
 
-const angular = require("angular");
-
 angular.module("io").controller("LinksCtrl", function($scope) {
     $scope.social = [
         {

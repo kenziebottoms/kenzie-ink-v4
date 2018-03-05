@@ -1,12 +1,10 @@
 "use strict";
 
-const angular = require("angular");
-
-angular.module("io", [require("angular-route"), require('angular-sanitize')]);
+angular.module("io", ['ui.router', require('angular-sanitize')]);
 
 require("./router");
 require("./keys");
-require("./directives");
+// require("./directives");
 
 require("./ctrl/menu");
 require("./ctrl/blog");
