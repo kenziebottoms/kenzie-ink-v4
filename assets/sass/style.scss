@@ -53,10 +53,6 @@ a {
                 }
             }
         }
-        img {
-            height: 40px;
-            width: 40px;
-        }
     }
     ul {
         list-style-type: none;
@@ -88,6 +84,7 @@ a {
                     transition: .2s;
                     opacity: 0;
                     font-weight: 300;
+                    cursor: pointer;
                 }
             }
         }
@@ -217,4 +214,9 @@ a {
             }
         }
     }
+}
+#contact {
+    padding: 1rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
