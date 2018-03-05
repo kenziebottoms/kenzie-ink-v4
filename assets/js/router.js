@@ -5,73 +5,46 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
         .state("home", {
             url: "/",
             templateUrl: "assets/partials/home.html",
-            controller: "HomeCtrl",
-            params: {
-                activeTab: "home"            
-            }
+            controller: "HomeCtrl"
         })
         .state("blog", {
             url: "/blog",
             templateUrl: "assets/partials/blog.html",
-            controller: "BlogCtrl",
-            params: {
-                activeTab: "blog"            
-            }
+            controller: "BlogCtrl"
         })
         .state("resume", {
             url: "/resume",
             templateUrl: "assets/partials/resume.html",
-            controller: "ResumeCtrl",
-            params: {
-                activeTab: "resume"            
-            }
+            controller: "ResumeCtrl"
         })
         .state("links", {
             url: "/links",
             templateUrl: "assets/partials/links.html",
-            controller: "LinksCtrl",
-            params: {
-                activeTab: "links"            
-            }
+            controller: "LinksCtrl"
         })
         .state("contact", {
             url: "/contact",
             templateUrl: "assets/partials/contact.html",
-            controller: "ContactCtrl",
-            params: {
-                activeTab: "contact"            
-            }
+            controller: "ContactCtrl"
         })
         .state("art", {
             url: "/blog/art",
             templateUrl: "assets/partials/art.html",
-            controller: "ArtCtrl",
-            params: {
-                activeTab: "art"            
-            }
+            controller: "ArtCtrl"
         })
         .state("code", {
             url: "/blog/code",
             templateUrl: "assets/partials/code.html",
-            controller: "CodeCtrl",
-            params: {
-                activeTab: "code"            
-            }
+            controller: "CodeCtrl"
         })
         .state("codePost", {
             url: "/code/:id",
             templateUrl: "assets/partials/code-post.html",
-            controller: "CodePostCtrl",
-            params: {
-                activeTab: "code"            
-            }
+            controller: "CodePostCtrl"
         })
         .state("artPost", {
             url: "/art/:id",
             templateUrl: "assets/partials/art-post.html",
-            controller: "ArtPostCtrl",
-            params: {
-                activeTab: "art"            
-            }
+            controller: "ArtPostCtrl"
         });
 });
