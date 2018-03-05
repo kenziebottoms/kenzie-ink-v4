@@ -1,7 +1,7 @@
 <ul ng-controller="MenuCtrl">
-    <li>
+    <li id="logo">
         <a ng-class="{active: state.current.name == 'home'}" href="/#!/">
-            <i class="material-icons">home</i>
+            <div ng-include="'assets/img/kb.svg'"></div>
             <label>home</label>
         </a>
     </li>

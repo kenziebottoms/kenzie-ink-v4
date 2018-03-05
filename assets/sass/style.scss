@@ -42,6 +42,22 @@ a {
             opacity: 1;
         }
     }
+    #logo {
+        a {
+            background: $green;
+            &:hover {
+                background: $black;
+                color: $green;
+                path:last-child {
+                    fill: $green;
+                }
+            }
+        }
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
     ul {
         list-style-type: none;
         padding: 0;

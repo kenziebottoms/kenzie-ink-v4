@@ -18,3 +18,9 @@ Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v
 - [ ] Footer
 - [x] Blog
 - [ ] Search
+
+## Resources
+
+- [RestDB](https://restdb.io/)
+- [Imgur](https://imgur.com/)
+- [Material icons](https://material.io/icons/)
