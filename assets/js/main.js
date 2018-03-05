@@ -4,7 +4,7 @@ angular.module("io", ['ui.router', require('angular-sanitize')]);
 
 require("./router");
 require("./keys");
-// require("./directives");
+require("./directives");
 
 require("./ctrl/menu");
 require("./ctrl/blog");
