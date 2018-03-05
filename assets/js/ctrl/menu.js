@@ -1,7 +1,5 @@
 "use strict";
 
-const angular = require("angular");
-
-angular.module("io").controller("MenuCtrl", function($scope, $route) {
-    $scope.$route = $route;
+angular.module("io").controller("MenuCtrl", function($scope, $state) {
+    $scope.state = $state;
 });

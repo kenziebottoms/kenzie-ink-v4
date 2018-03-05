@@ -1,7 +1,5 @@
 "use strict";
 
-const angular = require("angular");
-
 angular.module("io").controller("ResumeCtrl", function($scope) {
     $scope.resume = [
         {

@@ -1,9 +1,7 @@
 "use strict";
 
-const angular = require("angular");
-
-angular.module("io").controller("ArtPostCtrl", function($scope, $routeParams, RestFactory) {
-    RestFactory.getArtPost($routeParams.id)
+angular.module("io").controller("ArtPostCtrl", function($scope, $stateParams, RestFactory) {
+    RestFactory.getArtPost($stateParams.id)
         .then(post => {
             $scope.post = post;
         });

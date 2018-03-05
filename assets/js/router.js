@@ -1,53 +1,50 @@
 "use strict";
 
-const angular = require("angular");
-
-angular.module("io").config($routeProvider => {
-    $routeProvider
-        .when("/", {
+angular.module("io").config(($stateProvider, $urlRouterProvider) => {
+    $stateProvider
+        .state("home", {
+            url: "/",
             templateUrl: "assets/partials/home.html",
-            controller: "HomeCtrl",
-            activeTab: "home"
+            controller: "HomeCtrl"
         })
-        .when("/blog", {
+        .state("blog", {
+            url: "/blog",
             templateUrl: "assets/partials/blog.html",
-            controller: "BlogCtrl",
-            activeTab: "blog"
+            controller: "BlogCtrl"
         })
-        .when("/links", {
-            templateUrl: "assets/partials/links.html",
-            controller: "LinksCtrl",
-            activeTab: "links"
-        })
-        .when("/resume", {
+        .state("resume", {
+            url: "/resume",
             templateUrl: "assets/partials/resume.html",
-            controller: "ResumeCtrl",
-            activeTab: "resume"
+            controller: "ResumeCtrl"
         })
-        .when("/contact", {
+        .state("links", {
+            url: "/links",
+            templateUrl: "assets/partials/links.html",
+            controller: "LinksCtrl"
+        })
+        .state("contact", {
+            url: "/contact",
             templateUrl: "assets/partials/contact.html",
-            controller: "ContactCtrl",
-            activeTab: "contact"
+            controller: "ContactCtrl"
         })
-        .when("/blog/art", {
+        .state("art", {
+            url: "/blog/art",
             templateUrl: "assets/partials/art.html",
-            controller: "ArtCtrl",
-            activeTab: "art"
+            controller: "ArtCtrl"
         })
-        .when("/blog/code", {
+        .state("code", {
+            url: "/blog/code",
             templateUrl: "assets/partials/code.html",
-            controller: "CodeCtrl",
-            activeTab: "code"
+            controller: "CodeCtrl"
         })
-        .when("/code/:id", {
+        .state("codePost", {
+            url: "/code/:id",
             templateUrl: "assets/partials/code-post.html",
-            controller: "CodePostCtrl",
-            activeTab: "code"
+            controller: "CodePostCtrl"
         })
-        .when("/art/:id", {
+        .state("artPost", {
+            url: "/art/:id",
             templateUrl: "assets/partials/art-post.html",
-            controller: "ArtPostCtrl",
-            activeTab: "art"
-        })
-        .otherwise("/");
+            controller: "ArtPostCtrl"
+        });
 });
