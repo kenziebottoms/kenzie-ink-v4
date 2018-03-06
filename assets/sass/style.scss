@@ -162,16 +162,13 @@ a {
     }
     @media (min-width: 40rem) {
         display: grid;
+        grid-template: 1fr / 1fr;
+        .body {
+            justify-self: center;
+        }
     }
 }
 #post.art {
-    @media (min-width: 40rem) {
-        grid-template: 1fr / 1fr;
-        img, .body {
-            justify-self: center;
-            align-self: center;
-        }
-    }
     @media (min-width: 50rem) {
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: 1fr auto;
@@ -182,8 +179,18 @@ a {
     }
 }
 #post.code {
-    padding: 1rem 5rem;
-    grid-template-columns: 1fr 1fr;
+    @media (min-width: 40rem) {
+        padding: 1rem 3rem;
+        .hero {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    @media (min-width: 60rem) {
+        padding: 1rem 5rem;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+    }
     .body {
         padding: 0 1rem;
         .link {

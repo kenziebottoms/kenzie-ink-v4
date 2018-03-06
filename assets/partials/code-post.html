@@ -1,20 +1,21 @@
 <div class="code" id="post" ng-show="post">
-    <div class="hero">
-        <div ng-switch="!!post.codepen">
-            <p ng-switch-when="true" data-height="500" data-theme-id="dark" data-slug-hash="{{post.codepen}}" data-default-tab="result" data-user="kenziebottoms" data-embed-version="2" data-pen-title="Dragon curve" class="codepen">
-                See the Pen <a href="https://codepen.io/kenziebottoms/pen/{{post.codepen}}/">Dragon curve</a> by Kenzie Bottoms (<a href="https://codepen.io/kenziebottoms">@kenziebottoms</a>) on <a href="https://codepen.io">CodePen</a>.
-            </p>
-            <div ng-switch-when="true" ng-script="{{post.script}}"></div>
-        </div>
-        <img ng-show="post.image && !post.codepen" ng-src="{{post.image}}">
+    <div ng-switch="!!post.codepen" class="hero">
+        <p ng-switch-when="true" data-height="500" data-theme-id="dark" data-slug-hash="{{post.codepen}}" data-default-tab="result"
+            data-user="kenziebottoms" data-embed-version="2" data-pen-title="Dragon curve" class="codepen">
+            See the Pen
+            <a href="https://codepen.io/kenziebottoms/pen/{{post.codepen}}/">Dragon curve</a> by Kenzie Bottoms (
+            <a href="https://codepen.io/kenziebottoms">@kenziebottoms</a>) on
+            <a href="https://codepen.io">CodePen</a>.
+        </p>
+        <div ng-switch-when="true" ng-script="{{post.script}}"></div>
+        <img ng-show="post.image" ng-switch-when="false" ng-src="{{post.image}}">
     </div>
     <div class="body">
         <h3>{{post.title}}</h3>
         <date>{{post.date*1000 | date:"longDate"}}</date>
         <p ng-show="post.body" ng-bind-html="post.body"></p>
         <a class="github" ng-show="post.github" href="{{post.github}}" target="blank">
-            <img src="assets/img/github.svg">
-            {{post.github.split(".com")[1]}}
+            <img src="assets/img/github.svg"> {{post.github.split(".com")[1]}}
         </a>
         <a class="link" ng-href="{{post.link}}" ng-show="post.link" target="blank">
             <i class="material-icons">link</i>
