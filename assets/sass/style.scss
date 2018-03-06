@@ -216,10 +216,7 @@ a {
     }
 }
 #resume {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 5rem;
-    grid-gap: 1rem;
+    padding: 1rem;
     .job {
         display: flex;
         flex-direction: column;
@@ -228,6 +225,7 @@ a {
     .job, .block {
         background: #fff;
         padding: 1rem;
+        margin-bottom: 1rem;
         h3 {
             margin: 0 0 .75rem 0;
             font-weight: bold;
@@ -253,6 +251,20 @@ a {
                 background: #eee;
             }
         }
+    }
+    @media (min-width: 40rem) {
+        .block, .job {
+            margin: 0;
+        }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    @media (min-width: 50rem) {
+        padding: 1rem 2rem;
+    }
+    @media (min-width: 70rem) {
+        padding: 1rem 5rem;
     }
 }
 #contact {
