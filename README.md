@@ -9,6 +9,16 @@
 
 Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v1) to [this repo](https://github.com/nss-day-cohort-23/personal-site-instructions).
 
+## Run Locally
+
+```bash
+git clone git@github.com:kenziebottoms/nss-my-site-v2.git
+cd nss-my-site-v2
+npm install
+grunt
+hs -o
+```
+
 ## Include
 
 - [x] Resume/professional history
