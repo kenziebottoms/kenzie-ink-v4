@@ -268,10 +268,7 @@ a {
     }
 }
 #contact {
-    padding: 1rem 5rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    padding: 1rem;
     > .block {
         display: flex;
         flex-direction: column;
@@ -294,6 +291,31 @@ a {
         grid-row: 1 / span 3;
         a {
             display: inline;
+        }
+    }
+    @media (min-width: 40rem) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        #links {
+            grid-column: span 2;
+            grid-row: 3;
+        }
+    }
+    @media (min-width: 50rem) {
+        padding: 1rem 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        #links {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 3;
+        }
+    }
+    @media (min-width: 70rem) {
+        padding: 1rem 5rem;
+        grid-template-columns: repeat(4, 1fr);
+        #links {
+            grid-column: 3 / span 2;
+            grid-row: 1 / span 3;
         }
     }
 }
