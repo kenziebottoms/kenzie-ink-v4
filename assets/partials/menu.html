@@ -1,36 +1,36 @@
 <ul ng-controller="MenuCtrl">
     <li id="logo">
-        <a ng-class="{active: state.current.name == 'home'}" href="/#!/">
+        <a ng-class="{active: state.current.name == 'home'}" href="#!/">
             <div ng-include="'assets/img/kb.svg'"></div>
             <label>home</label>
         </a>
     </li>
     <li>
-        <a ng-class="{active: state.current.name == 'projects'}" href="/#!/projects">
+        <a ng-class="{active: state.current.name == 'projects'}" href="#!/projects">
             <i class="material-icons">extension</i>
             <label>projects</label>
         </a>
     </li>
     <li ng-show="state.current.name == 'projects' || state.current.name == 'art' || state.current.name == 'code'">
-        <a ng-class="{active: state.current.name == 'art'}" class="sec" href="/#!/projects/art">
+        <a ng-class="{active: state.current.name == 'art'}" class="sec" href="#!/projects/art">
             <i class="material-icons">color_lens</i>
             <label>art</label>
         </a>
     </li>
     <li ng-show="state.current.name == 'projects' || state.current.name == 'art' || state.current.name == 'code'">
-        <a ng-class="{active: state.current.name == 'code'}" class="sec" href="/#!/projects/code">
+        <a ng-class="{active: state.current.name == 'code'}" class="sec" href="#!/projects/code">
             <i class="material-icons">code</i>
             <label>code</label>
         </a>
     </li>
     <li>
-        <a ng-class="{active: state.current.name == 'resume'}" href="/#!/resume">
+        <a ng-class="{active: state.current.name == 'resume'}" href="#!/resume">
             <i class="material-icons">history</i>
             <label>resum&eacute;</label>
         </a>
     </li>
     <li>
-        <a ng-class="{active: state.current.name == 'contact'}" href="/#!/contact">
+        <a ng-class="{active: state.current.name == 'contact'}" href="#!/contact">
             <i class="material-icons">info_outline</i>
             <label>contact</label>
         </a>
