@@ -7,10 +7,10 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
             templateUrl: "assets/partials/home.html",
             controller: "HomeCtrl"
         })
-        .state("blog", {
-            url: "/blog",
-            templateUrl: "assets/partials/blog.html",
-            controller: "BlogCtrl"
+        .state("projects", {
+            url: "/projects",
+            templateUrl: "assets/partials/projects.html",
+            controller: "ProjectsCtrl"
         })
         .state("resume", {
             url: "/resume",
@@ -23,12 +23,12 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
             controller: "ContactCtrl"
         })
         .state("art", {
-            url: "/blog/art",
+            url: "/projects/art",
             templateUrl: "assets/partials/art.html",
             controller: "ArtCtrl"
         })
         .state("code", {
-            url: "/blog/code",
+            url: "/projects/code",
             templateUrl: "assets/partials/code.html",
             controller: "CodeCtrl"
         })

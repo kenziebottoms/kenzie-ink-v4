@@ -6,19 +6,19 @@
         </a>
     </li>
     <li>
-        <a ng-class="{active: state.current.name == 'blog'}" href="/#!/blog">
-            <i class="material-icons">rss_feed</i>
-            <label>blog</label>
+        <a ng-class="{active: state.current.name == 'projects'}" href="/#!/projects">
+            <i class="material-icons">extension</i>
+            <label>projects</label>
         </a>
     </li>
-    <li ng-show="state.current.name == 'blog' || state.current.name == 'art' || state.current.name == 'code'">
-        <a ng-class="{active: state.current.name == 'art'}" class="sec" href="/#!/blog/art">
+    <li ng-show="state.current.name == 'projects' || state.current.name == 'art' || state.current.name == 'code'">
+        <a ng-class="{active: state.current.name == 'art'}" class="sec" href="/#!/projects/art">
             <i class="material-icons">color_lens</i>
             <label>art</label>
         </a>
     </li>
-    <li ng-show="state.current.name == 'blog' || state.current.name == 'art' || state.current.name == 'code'">
-        <a ng-class="{active: state.current.name == 'code'}" class="sec" href="/#!/blog/code">
+    <li ng-show="state.current.name == 'projects' || state.current.name == 'art' || state.current.name == 'code'">
+        <a ng-class="{active: state.current.name == 'code'}" class="sec" href="/#!/projects/code">
             <i class="material-icons">code</i>
             <label>code</label>
         </a>
