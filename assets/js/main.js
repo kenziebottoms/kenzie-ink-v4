@@ -9,7 +9,6 @@ require("./directives");
 require("./ctrl/home");
 require("./ctrl/menu");
 require("./ctrl/blog");
-require("./ctrl/links");
 require("./ctrl/resume");
 require("./ctrl/contact");
 require("./ctrl/art");

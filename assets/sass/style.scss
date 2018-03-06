@@ -44,6 +44,7 @@ a {
     }
     #logo {
         a {
+            padding-top: 1rem;
             background: $green;
             &:hover {
                 background: $black;
@@ -175,7 +176,7 @@ a {
         }
     }
 }
-#resume, #links {
+#resume {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 5rem;
@@ -218,5 +219,34 @@ a {
 #contact {
     padding: 1rem 5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    .block {
+        padding: 2rem;
+        background: #fff;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    img {
+        width: 2rem;
+        height: auto;
+    }
+    i {
+        font-size: 2rem;
+    }
+    img, i {
+        margin-bottom: 1rem;
+        color: $black;
+    }
+    #links {
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 3;
+        a {
+            display: inline;
+        }
+    }
 }
