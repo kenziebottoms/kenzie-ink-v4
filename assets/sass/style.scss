@@ -358,6 +358,7 @@ a {
         grid-gap: 1rem;
         .block {
             margin: 0;
+            display: flex;
         }
         .blog, .contact, .resume {
             grid-column: span 2;
