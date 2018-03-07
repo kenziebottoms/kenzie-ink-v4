@@ -296,7 +296,8 @@ a {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 1rem; }
       #home .block {
-        margin: 0; }
+        margin: 0;
+        display: flex; }
       #home .blog, #home .contact, #home .resume {
         grid-column: span 2; } }
 
