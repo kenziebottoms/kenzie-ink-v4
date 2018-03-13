@@ -14,6 +14,16 @@ angular.module("io").controller("ArtPostCtrl", function($scope, $stateParams, Re
     RestFactory.getArtPost($stateParams.id)
         .then(post => {
             $scope.post = post;
+            RestFactory.getNextArtPost(post.date)
+                .then(data => {
+                    $scope.next = data[0]._id;
+                })
+                .catch(err => console.log(err));
+            RestFactory.getPrevArtPost(post.date)
+                .then(data => {
+                    $scope.prev = data[0]._id;
+                })
+                .catch(err => console.log(err));
         });
 });
 },{}],3:[function(require,module,exports){
@@ -268,6 +278,22 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
         });
     };
 
+    let getNextArtPost = date => {
+        return $q((resolve, reject) => {
+            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&q={"date":{"$lt": ${date}}}&sort=date&dir=-1&max=1`)
+                .then(({data}) => resolve(data))
+                .catch(err => reject(err));
+        });
+    };
+
+    let getPrevArtPost = date => {
+        return $q((resolve, reject) => {
+            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&q={"date":{"$gt": ${date}}}&sort=date&max=1`)
+                .then(({data}) => resolve(data))
+                .catch(err => reject(err));
+        });
+    };
+
     let getCodePost = id => {
         return $q((resolve, reject) => {
             $http.get(`${RESTDB.url}/code/${id}?apikey=${RESTDB.key}`)
@@ -276,7 +302,7 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
         });
     };
 
-    return { getBlog, getArt, getCode, getArtPost, getCodePost };
+    return { getBlog, getArt, getCode, getArtPost, getCodePost, getNextArtPost, getPrevArtPost };
 });
 },{"lodash":18}],12:[function(require,module,exports){
 "use strict";

@@ -147,7 +147,37 @@ a {
     grid-template-rows: 1fr auto; }
     #post.art img, #post.art .body {
       box-sizing: border-box;
-      grid-column-start: 2; } }
+      grid-column-start: 2;
+      z-index: 1000; } }
+#post.art #prev, #post.art #next {
+  display: none; }
+  @media (min-width: 50rem) {
+    #post.art #prev, #post.art #next {
+      display: inline-block;
+      align-self: center;
+      background: #5fd3bb;
+      color: #e7e7e7;
+      height: 2em;
+      width: 2em;
+      box-sizing: border-box;
+      transition: .2s;
+      font-size: 1.9rem; }
+      #post.art #prev:hover, #post.art #next:hover {
+        background: #333;
+        color: #5fd3bb; } }
+  #post.art #prev i, #post.art #next i {
+    font-size: inherit;
+    vertical-align: middle; }
+#post.art #prev {
+  justify-self: right;
+  margin-right: -1em;
+  border-radius: 50% 0 0 50%;
+  padding: .25em .05em; }
+#post.art #next {
+  justify-self: left;
+  margin-left: -1em;
+  border-radius: 0 50% 50% 0;
+  padding: .25em .05em .25em .9em; }
 
 @media (min-width: 40rem) {
   #post.code {

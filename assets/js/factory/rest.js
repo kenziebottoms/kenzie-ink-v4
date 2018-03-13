@@ -37,6 +37,22 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
         });
     };
 
+    let getNextArtPost = date => {
+        return $q((resolve, reject) => {
+            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&q={"date":{"$lt": ${date}}}&sort=date&dir=-1&max=1`)
+                .then(({data}) => resolve(data))
+                .catch(err => reject(err));
+        });
+    };
+
+    let getPrevArtPost = date => {
+        return $q((resolve, reject) => {
+            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&q={"date":{"$gt": ${date}}}&sort=date&max=1`)
+                .then(({data}) => resolve(data))
+                .catch(err => reject(err));
+        });
+    };
+
     let getCodePost = id => {
         return $q((resolve, reject) => {
             $http.get(`${RESTDB.url}/code/${id}?apikey=${RESTDB.key}`)
@@ -45,5 +61,5 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
         });
     };
 
-    return { getBlog, getArt, getCode, getArtPost, getCodePost };
+    return { getBlog, getArt, getCode, getArtPost, getCodePost, getNextArtPost, getPrevArtPost };
 });
