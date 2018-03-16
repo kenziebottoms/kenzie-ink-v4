@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/template-angular-red.svg)
 ![](https://img.shields.io/badge/modularity-browserify-yellow.svg)
 ![](https://img.shields.io/badge/css_framework-none-lightgrey.svg)
-![](https://img.shields.io/badge/mvp-wip-yellow.svg)
+![](https://img.shields.io/badge/mvp-working-green.svg)
 
 Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v1) to [this repo](https://github.com/nss-day-cohort-23/personal-site-instructions).
 
@@ -22,7 +22,7 @@ hs -o
 ## Include
 
 - [x] Resume/professional history
-- [ ] Header
+- [x] Header
     - [x] Logo
     - [x] Navigation
 - [ ] Footer

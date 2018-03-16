@@ -42,4 +42,5 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
             templateUrl: "assets/partials/art-post.html",
             controller: "ArtPostCtrl"
         });
+    $urlRouterProvider.otherwise("/");
 });
