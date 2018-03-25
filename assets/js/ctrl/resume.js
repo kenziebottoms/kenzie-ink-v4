@@ -80,8 +80,9 @@ angular.module("io").controller("ResumeCtrl", function($scope) {
             "position": "student of Full-Time Web Dev Cohort 23",
             "date": "November 2017 - May 2018",
             "desc": [
-                "design and implement custom archive pages",
-                "update, optimize, and modify a custom WordPress theme"
+                "source control and collaboration with Git/Hub, Trello, and Agile/Scrum processes",
+                "single-page applications using JavaScript, jQuery, and AngularJS",
+                "test-driven Node.js development using Express, Chai, and Mocha"
             ],
             "tech": [
                 "HTML", "SCSS/CSS", "Javascript & jQuery", "AngularJS", "Node.js", "Git"

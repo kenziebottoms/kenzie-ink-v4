@@ -148,7 +148,8 @@ a {
     #post.art img, #post.art .body {
       box-sizing: border-box;
       grid-column-start: 2;
-      z-index: 1000; } }
+      z-index: 1000;
+      margin: auto; } }
 #post.art #prev, #post.art #next {
   display: none; }
   @media (min-width: 50rem) {
@@ -306,13 +307,17 @@ a {
   box-sizing: border-box; }
   @media (min-width: 50rem) {
     #home {
-      padding: 5rem; } }
+      padding: 3rem; } }
   #home .block {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+  #home #bio {
+    grid-row: span 2;
+    font-size: 1rem;
+    line-height: 1.4; }
   #home .art, #home .code {
     display: none; }
   #home i {

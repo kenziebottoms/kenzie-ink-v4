@@ -181,6 +181,7 @@ a {
             box-sizing: border-box;
             grid-column-start: 2;
             z-index: 1000;
+            margin: auto;
         }
     }
     #prev, #next {
@@ -366,7 +367,7 @@ a {
 #home {
     padding: 1rem;
     @media (min-width: 50rem) {
-        padding: 5rem;
+        padding: 3rem;
     }
     display: block;
     font-size: 1.3rem;
@@ -377,6 +378,11 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #bio {
+        grid-row: span 2;
+        font-size: 1rem;
+        line-height: 1.4;
     }
     .art, .code {
         display: none;
