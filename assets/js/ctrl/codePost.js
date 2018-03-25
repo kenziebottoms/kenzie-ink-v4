@@ -4,5 +4,6 @@ angular.module("io").controller("CodePostCtrl", function($scope, $stateParams, R
     RestFactory.getCodePost($stateParams.id)
         .then(post => {
             $scope.post = post;
+            $scope.post.body = $scope.post.body.replace(/<a /g,"<a target='blank' ");
         });
 });

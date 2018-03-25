@@ -148,7 +148,8 @@ a {
     #post.art img, #post.art .body {
       box-sizing: border-box;
       grid-column-start: 2;
-      z-index: 1000; } }
+      z-index: 1000;
+      margin: auto; } }
 #post.art #prev, #post.art #next {
   display: none; }
   @media (min-width: 50rem) {
