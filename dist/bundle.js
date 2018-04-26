@@ -138,17 +138,17 @@ angular.module("io").controller("ProjectsCtrl", function($scope, RestFactory) {
 },{}],9:[function(require,module,exports){
 "use strict";
 
-angular.module("io").controller("ResumeCtrl", function($scope) {
+angular.module("io").controller("ResumeCtrl", function ($scope) {
     $scope.resume = [
         {
             "company": "Hereit.org",
             "position": "freelance developer",
             "date": "June 2013 - May 2015",
             "desc": [
-                "HTML audio player",
-                "Repair and expansion of existing front-end and admin dashboard features",
-                "Implementation of a front-end redesign",
-                "Incorporation of e-Commerce"
+                "Custom HTML5 audio player with CSS and jQuery",
+                "Repair and expansion of user and admin features with PHP and MySQL",
+                "Implementation of a front-end redesign with CSS3",
+                "Stripe e-commerce subscriptions and payments with jQuery"
             ],
             "tech": [
                 "HTML/CSS", "PHP", "MySQL", "JavaScript/jQuery", "Stripe e-Commerce"
@@ -157,9 +157,9 @@ angular.module("io").controller("ResumeCtrl", function($scope) {
         {
             "company": "Centre College IT Services",
             "position": "junior developer",
-            "date": "Septempber 2014 - January 2015",
+            "date": "Sep 2014 - Jan 2015",
             "desc": [
-                "build and modify student dashboard features"
+                "Construction, modification, and enhancement of student dashboard features"
             ],
             "tech": [
                 "C#"
@@ -168,34 +168,21 @@ angular.module("io").controller("ResumeCtrl", function($scope) {
         {
             "company": "Acxiom Corporation",
             "position": "Digital Content Specialist intern",
-            "date": "July 2015 - December 2015",
+            "date": "July 2015 - Dec 2015",
             "desc": [
-                "build and modify email marketing campaigns"
+                "Construction, modification, and QA of HTML email marketing templates"
             ],
             "tech": [
-                "HTML/CSS", "Javascript", "Photoshop"
-            ]
-        },
-        {
-            "company": "G/O Digital",
-            "position": "maintenance specialist, web dev associate",
-            "date": "January 2016 - April 2017",
-            "desc": [
-                "build custom, responsive WordPress themes",
-                "maintain and repair WordPress themes and plugins",
-                "organize and facilite inter-server website migration"
-            ],
-            "tech": [
-                "HTML", "SCSS/CSS", "jQuery", "PHP", "WordPress", "ExpressionEngine", "Git"
+                "HTML/CSS", "JavaScript", "Photoshop"
             ]
         },
         {
             "company": "IASIS Healthcare",
             "position": "freelance developer",
-            "date": "June 2017 - September 2017",
+            "date": "June 2017 - Sep 2017",
             "desc": [
-                "repair and optimize existing WordPress sites",
-                "design and implement custom landing pages"
+                "Repair and optimization of existing WordPress sites",
+                "Design and implementation of custom landing pages"
             ],
             "tech": [
                 "HTML/CSS", "jQuery", "PHP", "WordPress"
@@ -204,26 +191,44 @@ angular.module("io").controller("ResumeCtrl", function($scope) {
         {
             "company": "Vantedge",
             "position": "freelance developer",
-            "date": "January 2018 - present",
+            "date": "Jan 2018 - present",
             "desc": [
-                "design and implement custom archive pages",
-                "update, optimize, and modify a custom WordPress theme"
+                "Design and implementation of custom archive pages",
+                "Optimization, modification, and maintenance of a custom WordPress theme"
             ],
             "tech": [
                 "HTML/CSS", "jQuery", "PHP", "WordPress", "Git"
             ]
         },
         {
-            "company": "Nashville Software School",
-            "position": "student of Full-Time Web Dev Cohort 23",
-            "date": "November 2017 - May 2018",
+            "company": "G/O Digital",
+            "position": "maintenance specialist, web dev associate",
+            "date": "Jan 2016 - April 2017",
             "desc": [
-                "source control and collaboration with Git/Hub, Trello, and Agile/Scrum processes",
-                "single-page applications using JavaScript, jQuery, and AngularJS",
-                "test-driven Node.js development using Express, Chai, and Mocha"
+                "Responsive custom WordPress themes with HTML, SCSS, and Javascript",
+                "Maintenance, repair, and modification of custom WordPress themes",
+                "Organization and facilitation of inter-server migration of 100+ sites",
+                "Customer correspondence regarding site maintenance and updates",
+                "Server organization and maintenance using Python scripting"
             ],
             "tech": [
-                "HTML", "SCSS/CSS", "Javascript & jQuery", "AngularJS", "Node.js", "Git"
+                "HTML", "SCSS/CSS", "jQuery", "PHP", "WordPress", "ExpressionEngine", "Git"
+            ]
+        },
+        {
+            "company": "Nashville Software School",
+            "position": "student of Full-Time Web Dev Cohort 23",
+            "date": "Nov 2017 - May 2018",
+            "desc": [
+                "Source control and collaboration with Git/Hub and Trello using Agile/Scrum processes",
+                "Responsive HTML & CSS, with and without preprocessors and frameworks",
+                "Principles and fundamentals of object-oriented, DRY, modular JavaScript",
+                "Single-page applications using JavaScript, jQuery, and AngularJS",
+                "Server-side, test-driven Node development using Express, Chai, and Mocha",
+                "Schema design, database organization, and API construction"
+            ],
+            "tech": [
+                "HTML", "SCSS/CSS", "JavaScript & jQuery", "AngularJS", "Node.js", "Git"
             ]
         }
     ];
@@ -308,11 +313,11 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
     return { getBlog, getArt, getCode, getArtPost, getCodePost, getNextArtPost, getPrevArtPost };
 });
 },{"lodash":18}],12:[function(require,module,exports){
-"use strict";
+'use strict';
 
 angular.module("io").constant("RESTDB", {
-    "url": "https://kenziebottoms-c396.restdb.io/rest",
-    "key": "5a946ab3696ea8f017645933"
+  "url": "https://kenziebottoms-c396.restdb.io/rest",
+  "key": "5a946ab3696ea8f017645933"
 });
 },{}],13:[function(require,module,exports){
 "use strict";

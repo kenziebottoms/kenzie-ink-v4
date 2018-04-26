@@ -12,8 +12,8 @@ Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v
 ## Run Locally
 
 ```bash
-git clone git@github.com:kenziebottoms/nss-my-site-v2.git
-cd nss-my-site-v2
+git clone git@github.com:kenziebottoms/kenziebottoms.github.io.git
+cd kenziebottoms.github.io
 npm install
 grunt
 hs -o
