@@ -15,31 +15,17 @@
     <a class="block" target="blank" href="{{contact.linkedin}}">
         <img src="assets/img/linkedin.svg"> LinkedIn
     </a>
-    <a class="block" target="blank" href="{{contact.tumblr}}">
-        <img src="assets/img/tumblr.svg"> Tumblr
-    </a>
     <a class="block" target="blank" href="{{contact.codepen}}">
         <img src="assets/img/codepen.svg"> CodePen
     </a>
     <a class="block" target="blank" href="{{contact.artstation}}">
         <img src="assets/img/artstation.svg"> ArtStation
     </a>
+    <a class="block" target="blank" href="{{contact.redbubble}}">
+        <img src="assets/img/redbubble.svg"> RedBubble
+    </a>
     <a class="block" target="blank" href="{{contact.artistsnclients}}">
         <img src="assets/img/artistsnclients.png"> Artists&amp;Clients
     </a>
-    <div id="links">
-        <div class="block">
-            <h3>Resources</h3>
-            <div ng-repeat="category in resources">
-                <h4>{{category.name}}</h4>
-                <ul>
-                    <li ng-repeat="link in category.links">
-                        <a target="blank" ng-href="{{link.url}}">{{link.name}}</a>
-                        <span ng-show="link.desc">, {{link.desc}}</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </div>
 
