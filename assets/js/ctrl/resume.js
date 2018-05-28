@@ -13,7 +13,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
                 "Stripe e-commerce subscriptions and payments with jQuery"
             ],
             "tech": [
-                "HTML/CSS", "PHP", "MySQL", "JavaScript/jQuery", "Stripe e-Commerce"
+                "HTML", "CSS", "PHP", "MySQL", "JavaScript", "jQuery", "Stripe e-Commerce"
             ]
         },
         {
@@ -35,7 +35,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
                 "Construction, modification, and QA of HTML email marketing templates"
             ],
             "tech": [
-                "HTML/CSS", "JavaScript", "Photoshop"
+                "HTML", "JavaScript", "Photoshop"
             ]
         },
         {
@@ -47,7 +47,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
                 "Design and implementation of custom landing pages"
             ],
             "tech": [
-                "HTML/CSS", "jQuery", "PHP", "WordPress"
+                "HTML", "CSS", "jQuery", "PHP", "WordPress"
             ]
         },
         {
@@ -59,7 +59,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
                 "Optimization, modification, and maintenance of a custom WordPress theme"
             ],
             "tech": [
-                "HTML/CSS", "jQuery", "PHP", "WordPress", "Git"
+                "HTML", "CSS", "jQuery", "PHP", "WordPress", "Git"
             ]
         },
         {
@@ -67,7 +67,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             "position": "maintenance specialist, web dev associate",
             "date": "Jan 2016 - April 2017",
             "desc": [
-                "Responsive custom WordPress themes with HTML, SCSS, and Javascript",
+                "Responsive custom WordPress themes with HTML, SCSS, and JavaScript",
                 "Maintenance, repair, and modification of custom WordPress themes",
                 "Organization and facilitation of inter-server migration of 100+ sites",
                 "Customer correspondence regarding site maintenance and updates",
@@ -90,7 +90,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
                 "Schema design, database organization, and API construction"
             ],
             "tech": [
-                "HTML", "SCSS/CSS", "JavaScript & jQuery", "AngularJS", "Node.js", "Git"
+                "HTML", "SCSS/CSS", "JavaScript", "Git", "jQuery", "AngularJS", "Node.js & Express", "PostgreSQL"
             ]
         }
     ];
