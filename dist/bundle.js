@@ -57,9 +57,10 @@ angular.module("io").controller("ContactCtrl", function($scope) {
         "twitter": "https://twitter.com/kenziebottoms",
         "linkedin": "https://www.linkedin.com/in/mckenzie-bottoms",
         "codepen": "https://codepen.io/kenziebottoms/",
+        "artstation": "https://kenziebottoms.artstation.com/",
+        "society6": "https://society6.com/claquesous",
         "redbubble": "https://www.redbubble.com/people/claquesous/shop",
-        "artistsnclients": "https://artistsnclients.com/people/kenziebottoms",
-        "artstation": "https://kenziebottoms.artstation.com/"
+        "artistsnclients": "https://artistsnclients.com/people/kenziebottoms"
     };
 });
 },{}],6:[function(require,module,exports){
