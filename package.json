@@ -1,34 +1,24 @@
 {
-  "name": "name",
+  "name": "kenzie.ink",
   "version": "1.0.0",
-  "description": "An empty Grunt-running setup including Angular JS",
+  "description": "![](https://img.shields.io/badge/data-static_json-lightgrey.svg) ![](https://img.shields.io/badge/data-restdb-yellow.svg) ![](https://img.shields.io/badge/template-angular-red.svg) ![](https://img.shields.io/badge/modularity-browserify-yellow.svg) ![](https://img.shields.io/badge/css_framework-none-lightgrey.svg) ![](https://img.shields.io/badge/mvp-working-green.svg)",
   "main": "Gruntfile.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenziebottoms/kenziebottoms.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@uirouter/angularjs": "^1.0.15",
-    "angular": "^1.6.9",
-    "angular-sanitize": "^1.6.9",
-    "grunt": "^1.0.2",
-    "grunt-browserify": "^5.2.0",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "http-server": "^0.11.1",
-    "jquery": "^3.3.1",
-    "lodash": "^4.17.5",
-    "matchdep": "^2.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kenziebottoms/nss-my-site-v2.git"
-  },
   "bugs": {
-    "url": "https://github.com/kenziebottoms/nss-my-site-v2/issues"
+    "url": "https://github.com/kenziebottoms/kenziebottoms.github.io/issues"
   },
-  "homepage": "https://github.com/kenziebottoms/nss-my-site-v2#readme"
+  "homepage": "https://github.com/kenziebottoms/kenziebottoms.github.io#readme"
 }
