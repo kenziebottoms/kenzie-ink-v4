@@ -11,6 +11,7 @@ angular.module("io").controller("ContactCtrl", function($scope) {
         "artstation": "https://kenziebottoms.artstation.com/",
         "society6": "https://society6.com/claquesous",
         "redbubble": "https://www.redbubble.com/people/claquesous/shop",
-        "artistsnclients": "https://artistsnclients.com/people/kenziebottoms"
+        "artistsnclients": "https://artistsnclients.com/people/kenziebottoms",
+        "vsmarketplace": "https://marketplace.visualstudio.com/publishers/kenziebottoms"
     };
 });
