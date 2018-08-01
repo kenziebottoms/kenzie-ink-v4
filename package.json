@@ -4,9 +4,15 @@
   "description": "![](https://img.shields.io/badge/data-static_json-lightgrey.svg) ![](https://img.shields.io/badge/data-restdb-yellow.svg) ![](https://img.shields.io/badge/template-angular-red.svg) ![](https://img.shields.io/badge/modularity-browserify-yellow.svg) ![](https://img.shields.io/badge/css_framework-none-lightgrey.svg) ![](https://img.shields.io/badge/mvp-working-green.svg)",
   "main": "Gruntfile.js",
   "dependencies": {
+    "angular-sanitize": "^1.7.2",
+    "browserify": "^16.2.2",
     "grunt": "^1.0.3",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "http-server": "^0.11.1",
-    "jshint": "^2.9.6",
+    "jquery": "^3.3.1",
     "matchdep": "^2.0.0"
   },
   "devDependencies": {},
