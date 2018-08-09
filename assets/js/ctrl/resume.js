@@ -8,7 +8,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             "date": "June 2013 - May 2015",
             "desc": [
                 "Front-end redesign and custom HTML5 audio player with HTML/CSS and jQuery",
-                "Repair and expansion of user and admin features with PHP and MySQL",
+                "User and admin features with PHP and MySQL",
                 "Stripe e-commerce subscriptions and payments"
             ],
             "tech": [
@@ -62,18 +62,6 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             ]
         },
         {
-            "company": "Vantedge",
-            "position": "freelance developer",
-            "date": "Jan 2018 - present",
-            "desc": [
-                "Design and implementation of custom archive pages",
-                "Optimization, modification, and maintenance of a custom WordPress theme"
-            ],
-            "tech": [
-                "HTML", "CSS", "jQuery", "PHP", "WordPress", "Git"
-            ]
-        },
-        {
             "company": "Nashville Software School",
             "position": "student of Full-Time Web Dev Cohort 23",
             "date": "Nov 2017 - May 2018",
@@ -86,6 +74,18 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             ]
         },
         {
+            "company": "Vantedge",
+            "position": "freelance developer",
+            "date": "Jan 2018 - present",
+            "desc": [
+                "Design and implementation of custom archive pages",
+                "Optimization, modification, and maintenance of a custom WordPress theme"
+            ],
+            "tech": [
+                "HTML", "CSS", "jQuery", "PHP", "WordPress", "Git"
+            ]
+        },
+        {
             "company": "MERGE Digital",
             "position": "freelance developer",
             "date": "July 2018 - August 2018",
@@ -94,6 +94,17 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             ],
             "tech": [
                 "HTML", "SCSS/CSS", "JavaScript", "Git", "jQuery", "PHP"
+            ]
+        },
+        {
+            "company": "FortyAU",
+            "position": "software developer",
+            "date": "July 2018 - present",
+            "desc": [
+                "Automated testing, QA processes, and bug fixes for large legacy codebase"
+            ],
+            "tech": [
+                "Java", "Git", "Jira"
             ]
         }
     ];
