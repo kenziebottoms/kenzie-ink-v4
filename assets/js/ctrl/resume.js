@@ -7,10 +7,9 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             "position": "freelance developer",
             "date": "June 2013 - May 2015",
             "desc": [
-                "Custom HTML5 audio player with CSS and jQuery",
+                "Front-end redesign and custom HTML5 audio player with HTML/CSS and jQuery",
                 "Repair and expansion of user and admin features with PHP and MySQL",
-                "Implementation of a front-end redesign with CSS3",
-                "Stripe e-commerce subscriptions and payments with jQuery"
+                "Stripe e-commerce subscriptions and payments"
             ],
             "tech": [
                 "HTML", "CSS", "PHP", "MySQL", "JavaScript", "jQuery", "Stripe e-Commerce"
@@ -51,6 +50,18 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             ]
         },
         {
+            "company": "G/O Digital",
+            "position": "maintenance specialist, web dev associate",
+            "date": "Jan 2016 - April 2017",
+            "desc": [
+                "Maintenance and repair of custom WordPress themes based on correspondence with clients",
+                "Administrative maintenance and inter-server migration of 100+ sites using Python scripting"
+            ],
+            "tech": [
+                "HTML", "SCSS/CSS", "jQuery", "PHP", "WordPress", "ExpressionEngine", "Git"
+            ]
+        },
+        {
             "company": "Vantedge",
             "position": "freelance developer",
             "date": "Jan 2018 - present",
@@ -63,34 +74,26 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             ]
         },
         {
-            "company": "G/O Digital",
-            "position": "maintenance specialist, web dev associate",
-            "date": "Jan 2016 - April 2017",
-            "desc": [
-                "Responsive custom WordPress themes with HTML, SCSS, and JavaScript",
-                "Maintenance, repair, and modification of custom WordPress themes",
-                "Organization and facilitation of inter-server migration of 100+ sites",
-                "Customer correspondence regarding site maintenance and updates",
-                "Server organization and maintenance using Python scripting"
-            ],
-            "tech": [
-                "HTML", "SCSS/CSS", "jQuery", "PHP", "WordPress", "ExpressionEngine", "Git"
-            ]
-        },
-        {
             "company": "Nashville Software School",
             "position": "student of Full-Time Web Dev Cohort 23",
             "date": "Nov 2017 - May 2018",
             "desc": [
-                "Source control and collaboration with Git/Hub and Trello using Agile/Scrum processes",
-                "Responsive HTML & CSS, with and without preprocessors and frameworks",
-                "Principles and fundamentals of object-oriented, DRY, modular JavaScript",
-                "Single-page applications using JavaScript, jQuery, and AngularJS",
-                "Server-side, test-driven Node development using Express, Chai, and Mocha",
-                "Schema design, database organization, and API construction"
+                "Source control and collaboration with Git/Hub, Trello, and Agile/Scrum processes",
+                "Full-stack Node.js development with JavaScript, jQuery, and AngularJS"
             ],
             "tech": [
                 "HTML", "SCSS/CSS", "JavaScript", "Git", "jQuery", "AngularJS", "Node.js & Express", "PostgreSQL"
+            ]
+        },
+        {
+            "company": "MERGE Digital",
+            "position": "freelance developer",
+            "date": "July 2018 - August 2018",
+            "desc": [
+                "Responsive custom WordPress themes built with Roots.io using SCSS"
+            ],
+            "tech": [
+                "HTML", "SCSS/CSS", "JavaScript", "Git", "jQuery", "PHP"
             ]
         }
     ];
