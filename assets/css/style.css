@@ -137,6 +137,7 @@ a {
   @media (min-width: 40rem) {
     #post {
       display: grid;
+      grid-gap: 1rem;
       grid-template: 1fr / 1fr; }
       #post .body {
         justify-self: center; } }
@@ -180,6 +181,8 @@ a {
   border-radius: 0 50% 50% 0;
   padding: .25em .05em .25em .9em; }
 
+#post.code .hero {
+  text-align: center; }
 @media (min-width: 40rem) {
   #post.code {
     padding: 1rem 3rem; }
@@ -189,10 +192,19 @@ a {
 @media (min-width: 60rem) {
   #post.code {
     padding: 1rem 5rem;
-    grid-template-columns: 1fr 1fr;
-    align-content: center; } }
+    grid-template-columns: 50% 50%;
+    align-content: center; }
+    #post.code .hero {
+      justify-self: center; } }
 #post.code .body {
-  padding: 0 1rem; }
+  max-width: 100%; }
+  #post.code .body a {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 1rem; }
   #post.code .body .link {
     padding: .25rem 0; }
     #post.code .body .link i {
@@ -201,14 +213,12 @@ a {
       margin-right: .25rem;
       vertical-align: middle; }
   #post.code .body .github {
-    padding: .25rem 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
+    padding: .25rem 0; }
     #post.code .body .github img {
       height: 2rem;
       width: 2rem;
-      margin-right: .5rem; }
+      margin-right: .5rem;
+      vertical-align: middle; }
 
 #resume {
   padding: 1rem; }

@@ -167,6 +167,7 @@ a {
     }
     @media (min-width: 40rem) {
         display: grid;
+        grid-gap: 1rem;
         grid-template: 1fr / 1fr;
         .body {
             justify-self: center;
@@ -220,6 +221,9 @@ a {
     }
 }
 #post.code {
+    .hero {
+        text-align: center;
+    }
     @media (min-width: 40rem) {
         padding: 1rem 3rem;
         .hero {
@@ -229,11 +233,22 @@ a {
     }
     @media (min-width: 60rem) {
         padding: 1rem 5rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         align-content: center;
+        .hero {
+            justify-self: center;
+        }
     }
     .body {
-        padding: 0 1rem;
+        max-width: 100%;
+        a {
+            max-width: 100%;
+            overflow: hidden;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 1rem;
+        }
         .link {
             padding: .25rem 0;
             i {
@@ -249,10 +264,8 @@ a {
                 height: 2rem;
                 width: 2rem;
                 margin-right: .5rem;
+                vertical-align: middle;
             }
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
         }
     }
 }
