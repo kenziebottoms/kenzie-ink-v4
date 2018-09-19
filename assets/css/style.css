@@ -193,12 +193,14 @@ a {
   #post.code {
     padding: 1rem 5rem;
     grid-template-columns: 50% 50%;
-    align-content: center; }
+    align-content: center;
+    height: 100vh; }
     #post.code .hero {
-      justify-self: center; } }
+      justify-self: center;
+      max-height: 100%; } }
 #post.code .body {
   max-width: 100%; }
-  #post.code .body a {
+  #post.code .body > a {
     max-width: 100%;
     overflow: hidden;
     display: block;

@@ -235,13 +235,15 @@ a {
         padding: 1rem 5rem;
         grid-template-columns: 50% 50%;
         align-content: center;
+        height: 100vh;
         .hero {
             justify-self: center;
+            max-height: 100%;
         }
     }
     .body {
         max-width: 100%;
-        a {
+        > a {
             max-width: 100%;
             overflow: hidden;
             display: block;
