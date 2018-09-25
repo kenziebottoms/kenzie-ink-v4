@@ -1,7 +1,5 @@
 <div id="home">
-    <div id="bio" class="block resume">
-        {{bio}}
-    </div>
+    <div id="bio" ng-bind-html="bio" class="block resume"></div>
     <a class="block blog" href="/#!/projects">
         <i class="material-icons">extension</i>
         Projects
@@ -15,7 +13,7 @@
         Code
     </a>
     <a class="block resume" href="/#!/resume">
-        <i class="material-icons">history</i>
+        <i class="material-icons">assignment_ind</i>
         R&eacute;sum&eacute;
     </a>
     <a class="block contact" href="/#!/contact">

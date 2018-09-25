@@ -76,7 +76,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
         {
             "company": "Vantedge",
             "position": "freelance developer",
-            "date": "Jan 2018 - present",
+            "date": "Jan 2018 - August 2018",
             "desc": [
                 "Design and implementation of custom archive pages",
                 "Optimization, modification, and maintenance of a custom WordPress theme"
@@ -101,10 +101,10 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             "position": "software developer",
             "date": "July 2018 - present",
             "desc": [
-                "Automated testing, QA processes, and bug fixes for large legacy codebase"
+                "Automated testing, QA processes, and bug fixes for large legacy codebase",
             ],
             "tech": [
-                "Java", "Git", "Jira"
+                "Java", "Spring Boot", "JUnit", "Git", "Jira"
             ]
         }
     ];

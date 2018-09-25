@@ -273,7 +273,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-align: center; }
   #contact img {
     width: 2rem;
     height: auto; }

@@ -68,7 +68,7 @@ angular.module("io").controller("ContactCtrl", function($scope) {
 "use strict";
 
 angular.module("io").controller("HomeCtrl", function($scope) {
-    $scope.bio = 'Kenzie Bottoms is a feminist, artist, and developer born and raised in Nashville. They are always open to new opportunities, technical or creative (or better yet, both), and their default mindset, for better or worse, is usually, "Challenge accepted." They have just graduated from Nashville Software School for full-stack Node.js development. They have begun development work with FortyAU and will soon be skating with the Nashville Rollergirls.';
+    $scope.bio = '<p>Kenzie Bottoms is a feminist, artist, and developer born and raised in Nashville. They are always open to new opportunities, technical or creative (or better yet, both), and their default mindset, for better or worse, is usually, "Challenge accepted." They play roller derby under the name <a href="https://en.wikipedia.org/wiki/Ellen_Ripley" target="blank">Ellen R.I.P.ley</a> and skate with the <a href="https://www.nashvillerollergirls.com/" target="blank">Nashville Rollergirls</a>. They are a full-stack Node.js <a href="http://nashvillesoftwareschool.com/" target="blank">Nashville Software School</a> graduate, and have recently begun development work with <a href="https://fortyau.com/" target="blank">FortyAU</a>.</p>';
 });
 },{}],7:[function(require,module,exports){
 "use strict";
@@ -164,7 +164,7 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
         {
             "company": "Vantedge",
             "position": "freelance developer",
-            "date": "Jan 2018 - present",
+            "date": "Jan 2018 - August 2018",
             "desc": [
                 "Design and implementation of custom archive pages",
                 "Optimization, modification, and maintenance of a custom WordPress theme"
@@ -189,10 +189,10 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             "position": "software developer",
             "date": "July 2018 - present",
             "desc": [
-                "Automated testing, QA processes, and bug fixes for large legacy codebase"
+                "Automated testing, QA processes, and bug fixes for large legacy codebase",
             ],
             "tech": [
-                "Java", "Git", "Jira"
+                "Java", "Spring Boot", "JUnit", "Git", "Jira"
             ]
         }
     ];
