@@ -1,7 +1,6 @@
-$black: #333;
-$green: #5fd3bb;
-$dark-green: #1b9b81;
-$bg: #e7e7e7;
+@import "colors";
+@import "sizing";
+
 html {
     font-size: 20px;
 }
@@ -38,6 +37,7 @@ a {
     margin-left: -45px;
     opacity: 0;
     transition: .2s;
+    z-index: -300;
     &.active {
         opacity: 1;
     }
@@ -132,18 +132,20 @@ a {
         padding: 0;
         background-position: center;
         background-size: cover;
+        transition: .2s;
+        filter: grayscale(.8);
+        &:hover {
+            filter: grayscale(0);
+        }
         .overlay {
-            transition: .3s;
-            display: absolute;
             padding: 1rem 1rem;
             color: #fff;
             font-size: 1.3rem;
             font-weight: 300;
             text-align: right;
-            background: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.5) 100%);
-            &:hover {
-                background: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.75) 100%);
-            }
+            height: 100%;
+            box-sizing: border-box;
+            background: rgba($black, .4);
         }
     }
     @media (min-width: 30rem) {
@@ -398,6 +400,14 @@ a {
     @media (min-width: 50rem) {
         padding: 3rem;
     }
+    @media (min-height: 50rem) {
+        padding: 5rem 3rem;
+    }
+    @media (min-height: 60rem) {
+        padding: 7rem 3rem;
+    }
+    max-width: 75rem;
+    margin: auto;
     display: block;
     font-size: 1.3rem;
     box-sizing: border-box;
