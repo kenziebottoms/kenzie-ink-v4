@@ -32,6 +32,19 @@ a {
     margin: 5rem auto;
     text-align: center;
     display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-left: -45px;
+    opacity: 0;
+    transition: .2s;
+    &.active {
+        opacity: 1;
+    }
+    img {
+        height: 90px;
+        width: 90px;
+    }
 }
 .block {
     padding: 1rem;
