@@ -190,9 +190,10 @@ angular.module("io").controller("ResumeCtrl", function ($scope) {
             "date": "July 2018 - present",
             "desc": [
                 "Automated testing, QA processes, and bug fixes for large legacy codebase",
+                "Responsive styling and front-end enhancements of a Vue.js app using SCSS"
             ],
             "tech": [
-                "Java", "Spring Boot", "JUnit", "Git", "Jira"
+                "Java", "Vue.js", "SCSS/CSS", "Spring Boot", "JUnit", "Git", "Jira"
             ]
         }
     ];
