@@ -1,17 +1,186 @@
 <div id="resume">
-    <div class="job" ng-repeat="job in resume">
-        <h3>
-            {{job.company}}
-            <date>{{job.date}}</date>
-        </h3>
-        <h4>{{job.position}}</h4>
+    <year>2019</year>
+    <div id="green-border"></div>
+    <job length="1" class="lane-1">
+        <h3>FortyAU</h3>
+        <h4>Software Developer</h4>
+        <date>July 2017 - present</date>
         <ul>
-            <li ng-repeat="item in job.desc">
-                {{item}}
-            </li>
+            <li>Automated testing, QA processes, and bug fixes for large legacy codebase</li>
+            <li>Responsive styling and front-end enhancements of a Vue.js app using SCSS</li>
         </ul>
-        <div class="tech">
-            <span class="tag" ng-repeat="item in job.tech">{{item}}</span>
-        </div>
-    </div>
+        <tech>
+            <tag>Java</tag>
+            <tag>Spring Boot</tag>
+            <tag>JUnit</tag>
+            <tag>Vue.js</tag>
+            <tag>JavaScript</tag>
+            <tag>SCSS/CSS</tag>
+            <tag>Jira</tag>
+        </tech>
+    </job>
+    <job length="1" class="align-self-end lane-2">
+        <h3>MERGE Digital</h3>
+        <h4>Freelance Developer</h4>
+        <date>July 2017 - August 2018</date>
+        <ul>
+            <li>Responsive custom WordPress themes built with Roots.io using SCSS</li>
+        </ul>
+        <tech>
+            <tag>HTML</tag>
+            <tag>SCSS/CSS</tag>
+            <tag>jQuery</tag>
+            <tag>WordPress</tag>
+            <tag>PHP</tag>
+        </tech>
+    </job>
+    <job length="1" class="lane-1">
+        <h3>Nashville Software School</h3>
+        <h4>Apprentice Software Developer</h4>
+        <date>November 2017 - May 2018</date>
+        <ul>
+            <li>Source control and collaboration with Git & GitHub.</li>
+            <li>Collaboration with GitHub projects and Trello using Agile/Scrum processes.</li>
+            <li>Responsive HTML & CSS with and without preprocessors like Sass and Haml as well as frameworks like Bootstrap and Materialize.</li>
+            <li>Principles and fundamentals of object-oriented, DRY, modular JavaScript.</li>
+            <li>Single-page applications using JavaScript, jQuery, and AngularJS.</li>
+            <li>Task management using Grunt with JSHint, Browserify, SCSS, etc.</li>
+            <li>Server-side, test-driven Node development using Express, Chai, and Mocha.</li>
+            <li>Schema design, database organization, and API construction.</li>
+        </ul>
+        <tech>
+            <tag>Git</tag>
+            <tag>JavaScript</tag>
+            <tag>jQuery</tag>
+            <tag>NPM</tag>
+            <tag>Node.js &amp; Express</tag>
+            <tag>AngularJS</tag>
+            <tag>SCSS/CSS</tag>
+            <tag>HTML/HAML</tag>
+            <tag>Grunt/Gulp</tag>
+            <tag>Mocha &amp; Chai testing</tag>
+            <tag>MySQL</tag>
+        </tech>
+    </job>
+    <job length="1" class="lane-2 align-self-center">
+        <h3>Vantedge</h3>
+        <h4>Freelance Developer</h4>
+        <date>January 2018 - August 2018</date>
+        <ul>
+            <li>Design and implementation of custom archive pages.</li>
+            <li>Optimization, modification, and maintenance of a custom WordPress theme.</li>
+        </ul>
+        <tech>
+            <tag>HTML</tag>
+            <tag>jQuery</tag>
+            <tag>WordPress</tag>
+            <tag>PHP</tag>
+        </tech>
+    </job>
+    <year>2018</year>
+    <job length="1" class="lane-2">
+        <h3>IASIS Healthcare</h3>
+        <h4>Freelance Developer</h4>
+        <date>June 2017 - September 2017</date>
+        <ul>
+            <li>Repair and optimization of existing WordPress sites</li>
+            <li>Design and implementation of custom landing pages</li>
+        </ul>
+        <tech>
+            <tag>HTML</tag>
+            <tag>jQuery</tag>
+            <tag>SCSS/CSS</tag>
+            <tag>WordPress</tag>
+            <tag>PHP</tag>
+        </tech>
+    </job>
+    <job length="2" class="lane-1">
+        <h3>G/O Digital</h3>
+        <h4>Web Development Maintenance Specialist</h4>
+        <date>September 2016 - April 2017</date>
+        <ul>
+            <li>Responsive custom WordPress themes using HTML, SCSS, and JavaScript.</li>
+            <li>Organization and facilitation of inter-server migration of 100+ sites.</li>
+            <li>Direct customer correspondence regarding site maintenance and updates.</li>
+            <li>Maintenance, repair, and modification of custom WordPress themes.</li>
+            <li>Server organization and maintenance using Python scripting.</li>
+        </ul>
+        <tech>
+            <tag>Python</tag>
+            <tag>HTML</tag>
+            <tag>jQuery</tag>
+            <tag>SCSS/CSS</tag>
+            <tag>WordPress</tag>
+            <tag>PHP</tag>
+            <tag>ExpressionEngine</tag>
+            <tag>Git</tag>
+        </tech>
+    </job>
+    <year>2017</year>
+    <job length="1" class="lane-1">
+        <h3>G/O Digital (cont.)</h3>
+        <h4>Web Development Associate</h4>
+        <date>January 2016 - September 2016</date>
+        <ul>
+            <li>Maintenance, repair, and modification of custom WordPress themes.</li>
+            <li>Content and cosmetic changes using the WordPress CMS.</li>
+        </ul>
+        <tech>
+            <tag>HTML</tag>
+            <tag>jQuery</tag>
+            <tag>SCSS/CSS</tag>
+            <tag>WordPress</tag>
+            <tag>PHP</tag>
+            <tag>ExpressionEngine</tag>
+            <tag>Git</tag>
+        </tech>
+    </job>
+    <year>2016</year>
+    <job length="1" class="lane-1">
+        <h3>Acxiom Corporation</h3>
+        <h4>Digital Content Specialist Intern</h4>
+        <date>July 2015 - December 2015</date>
+        <ul>
+            <li>Construction, modification, and QA of HTML email marketing templates.</li>
+        </ul>
+        <tech>
+            <tag>HTML</tag>
+            <tag>JavaScript</tag>
+            <tag>Photoshop</tag>
+        </tech>
+    </job>
+    <year>2015</year>
+    <job length="4" class="lane-2">
+        <h3>Hereit.org</h3>
+        <h4>Freelance Developer</h4>
+        <date>June 2013 - May 2015</date>
+        <ul>
+            <li>Custom HTML5 audio player using jQuery.</li>
+            <li>Repair and expansion of user-facing and administrative features with PHP and MySQL.</li>
+            <li>Implementation of a front-end redesign with CSS3.</li>
+            <li>Stripe e-commerce subscriptions and payments with jQuery/Ajax.</li>
+        </ul>
+        <tech>
+            <tag>HTML</tag>
+            <tag>CSS</tag>
+            <tag>PHP</tag>
+            <tag>MySQL</tag>
+            <tag>JavaScript</tag>
+            <tag>jQuery</tag>
+            <tag>Stripe e-Commerce</tag>
+        </tech>
+    </job>
+    <job length="1" class="lane-1 align-self-end">
+        <h3>Centre College IT Services</h3>
+        <h4>Junior Developer</h4>
+        <date>September 2014 - January 2015</date>
+        <ul>
+            <li>Construction, modification, and enhancement of student dashboard features.</li>
+        </ul>
+        <tech>
+            <tag>C#</tag>
+        </tech>
+    </job>
+    <year>2014</year>
+    <year>2013</year>
 </div>

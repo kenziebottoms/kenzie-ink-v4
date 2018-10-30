@@ -88,120 +88,6 @@ angular.module("io").controller("ProjectsCtrl", function($scope, RestFactory) {
 },{}],9:[function(require,module,exports){
 "use strict";
 
-angular.module("io").controller("ResumeCtrl", function ($scope) {
-    $scope.resume = [
-        {
-            "company": "Hereit.org",
-            "position": "freelance developer",
-            "date": "June 2013 - May 2015",
-            "desc": [
-                "Front-end redesign and custom HTML5 audio player with HTML/CSS and jQuery",
-                "User and admin features with PHP and MySQL",
-                "Stripe e-commerce subscriptions and payments"
-            ],
-            "tech": [
-                "HTML", "CSS", "PHP", "MySQL", "JavaScript", "jQuery", "Stripe e-Commerce"
-            ]
-        },
-        {
-            "company": "Centre College IT Services",
-            "position": "junior developer",
-            "date": "Sep 2014 - Jan 2015",
-            "desc": [
-                "Construction, modification, and enhancement of student dashboard features"
-            ],
-            "tech": [
-                "C#"
-            ]
-        },
-        {
-            "company": "Acxiom Corporation",
-            "position": "Digital Content Specialist intern",
-            "date": "July 2015 - Dec 2015",
-            "desc": [
-                "Construction, modification, and QA of HTML email marketing templates"
-            ],
-            "tech": [
-                "HTML", "JavaScript", "Photoshop"
-            ]
-        },
-        {
-            "company": "IASIS Healthcare",
-            "position": "freelance developer",
-            "date": "June 2017 - Sep 2017",
-            "desc": [
-                "Repair and optimization of existing WordPress sites",
-                "Design and implementation of custom landing pages"
-            ],
-            "tech": [
-                "HTML", "CSS", "jQuery", "PHP", "WordPress"
-            ]
-        },
-        {
-            "company": "G/O Digital",
-            "position": "maintenance specialist, web dev associate",
-            "date": "Jan 2016 - April 2017",
-            "desc": [
-                "Maintenance and repair of custom WordPress themes based on correspondence with clients",
-                "Administrative maintenance and inter-server migration of 100+ sites using Python scripting"
-            ],
-            "tech": [
-                "HTML", "SCSS/CSS", "jQuery", "PHP", "WordPress", "ExpressionEngine", "Git"
-            ]
-        },
-        {
-            "company": "Nashville Software School",
-            "position": "student of Full-Time Web Dev Cohort 23",
-            "date": "Nov 2017 - May 2018",
-            "desc": [
-                "Source control and collaboration with Git/Hub, Trello, and Agile/Scrum processes",
-                "Full-stack Node.js development with JavaScript, jQuery, and AngularJS"
-            ],
-            "tech": [
-                "HTML", "SCSS/CSS", "JavaScript", "Git", "jQuery", "AngularJS", "Node.js & Express", "PostgreSQL"
-            ]
-        },
-        {
-            "company": "Vantedge",
-            "position": "freelance developer",
-            "date": "Jan 2018 - August 2018",
-            "desc": [
-                "Design and implementation of custom archive pages",
-                "Optimization, modification, and maintenance of a custom WordPress theme"
-            ],
-            "tech": [
-                "HTML", "CSS", "jQuery", "PHP", "WordPress", "Git"
-            ]
-        },
-        {
-            "company": "MERGE Digital",
-            "position": "freelance developer",
-            "date": "July 2018 - August 2018",
-            "desc": [
-                "Responsive custom WordPress themes built with Roots.io using SCSS"
-            ],
-            "tech": [
-                "HTML", "SCSS/CSS", "JavaScript", "Git", "jQuery", "PHP"
-            ]
-        },
-        {
-            "company": "FortyAU",
-            "position": "software developer",
-            "date": "July 2018 - present",
-            "desc": [
-                "Automated testing, QA processes, and bug fixes for large legacy codebase",
-                "Responsive styling and front-end enhancements of a Vue.js app using SCSS"
-            ],
-            "tech": [
-                "Java", "Vue.js", "SCSS/CSS", "Spring Boot", "JUnit", "Git", "Jira"
-            ]
-        }
-    ];
-    $scope.resume.reverse();
-});
-},{}],10:[function(require,module,exports){
-"use strict";
-
 const $ = require("jquery");
 
 angular.module("io").directive("ngScript", () => {
@@ -211,7 +97,7 @@ angular.module("io").directive("ngScript", () => {
         }
     };
 });
-},{"jquery":17}],11:[function(require,module,exports){
+},{"jquery":16}],10:[function(require,module,exports){
 "use strict";
 
 const _ = require("lodash");
@@ -277,14 +163,14 @@ angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
 
     return { getBlog, getArt, getCode, getArtPost, getCodePost, getNextArtPost, getPrevArtPost };
 });
-},{"lodash":18}],12:[function(require,module,exports){
+},{"lodash":17}],11:[function(require,module,exports){
 'use strict';
 
 angular.module("io").constant("RESTDB", {
   "url": "https://kenziebottoms-c396.restdb.io/rest",
   "key": "5a946ab3696ea8f017645933"
 });
-},{}],13:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 "use strict";
 
 angular.module("io", ['ui.router', require('angular-sanitize')]);
@@ -296,7 +182,6 @@ require("./directives");
 require("./ctrl/home");
 require("./ctrl/menu");
 require("./ctrl/projects");
-require("./ctrl/resume");
 require("./ctrl/contact");
 require("./ctrl/art");
 require("./ctrl/code");
@@ -304,7 +189,7 @@ require("./ctrl/artPost");
 require("./ctrl/codePost");
 
 require("./factory/rest");
-},{"./ctrl/art":1,"./ctrl/artPost":2,"./ctrl/code":3,"./ctrl/codePost":4,"./ctrl/contact":5,"./ctrl/home":6,"./ctrl/menu":7,"./ctrl/projects":8,"./ctrl/resume":9,"./directives":10,"./factory/rest":11,"./keys":12,"./router":14,"angular-sanitize":16}],14:[function(require,module,exports){
+},{"./ctrl/art":1,"./ctrl/artPost":2,"./ctrl/code":3,"./ctrl/codePost":4,"./ctrl/contact":5,"./ctrl/home":6,"./ctrl/menu":7,"./ctrl/projects":8,"./directives":9,"./factory/rest":10,"./keys":11,"./router":13,"angular-sanitize":15}],13:[function(require,module,exports){
 "use strict";
 
 angular.module("io").config(($stateProvider, $urlRouterProvider) => {
@@ -321,8 +206,7 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
         })
         .state("resume", {
             url: "/resume",
-            templateUrl: "assets/partials/resume.html",
-            controller: "ResumeCtrl"
+            templateUrl: "assets/partials/resume.html"
         })
         .state("contact", {
             url: "/contact",
@@ -351,7 +235,7 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
         });
     $urlRouterProvider.otherwise("/");
 });
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /**
  * @license AngularJS v1.7.5
  * (c) 2010-2018 Google, Inc. http://angularjs.org
@@ -1266,11 +1150,11 @@ angular.module('ngSanitize').filter('linky', ['$sanitize', function($sanitize) {
 
 })(window, window.angular);
 
-},{}],16:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 require('./angular-sanitize');
 module.exports = 'ngSanitize';
 
-},{"./angular-sanitize":15}],17:[function(require,module,exports){
+},{"./angular-sanitize":14}],16:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11636,7 +11520,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],18:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -28745,4 +28629,4 @@ return jQuery;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}]},{},[13]);
+},{}]},{},[12]);

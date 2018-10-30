@@ -14,8 +14,7 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
         })
         .state("resume", {
             url: "/resume",
-            templateUrl: "assets/partials/resume.html",
-            controller: "ResumeCtrl"
+            templateUrl: "assets/partials/resume.html"
         })
         .state("contact", {
             url: "/contact",
