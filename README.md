@@ -37,3 +37,4 @@ hs -o
 - [Imgur](https://imgur.com/)
 - [Material icons](https://material.io/icons/)
 - [SVOMG!](https://jakearchibald.github.io/svgomg/), Jake Archibald
+- [loading.io](https://loading.io/)
