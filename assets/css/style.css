@@ -272,8 +272,15 @@ a {
   margin: 3rem auto;
   padding: 0 2rem; }
   #resume year,
-  #resume #green-border {
+  #resume #green-border,
+  #resume header {
     display: none; }
+  #resume header {
+    color: #999;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+    text-transform: lowercase; }
   #resume job {
     background: #f6f6f6;
     padding: 1rem;
@@ -314,19 +321,27 @@ a {
         display: block;
         background: #5fd3bb;
         grid-column-start: 2;
-        grid-row-start: 1;
-        grid-row-end: 13; }
-      #resume job {
-        margin: 0; }
-        #resume job.lane-1 {
-          grid-column: 3; }
-        #resume job.lane-2 {
+        grid-row: 2 / 15; }
+      #resume header {
+        display: block; }
+      #resume job,
+      #resume header {
+        margin: 0;
+        grid-column: span 1; }
+        #resume job.lane-1,
+        #resume header.lane-1 {
+          grid-column-start: 3; }
+        #resume job.lane-2,
+        #resume header.lane-2 {
           grid-column-start: 4; }
-        #resume job[length='2'] {
+        #resume job.length-2,
+        #resume header.length-2 {
           grid-row: span 2; }
-        #resume job[length='3'] {
+        #resume job.length-3,
+        #resume header.length-3 {
           grid-row: span 3; }
-        #resume job[length='4'] {
+        #resume job.length-4,
+        #resume header.length-4 {
           grid-row: span 4; }
       #resume .align-self-start {
         align-self: start; }

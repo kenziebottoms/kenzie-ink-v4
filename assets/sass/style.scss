@@ -282,7 +282,7 @@ a {
     }
     .body {
         max-width: 100%;
-        > a {
+        >a {
             max-width: 100%;
             overflow: hidden;
             display: block;
@@ -316,8 +316,16 @@ a {
     margin: 3rem auto;
     padding: 0 2rem;
     year,
-    #green-border {
+    #green-border,
+    header {
         display: none;
+    }
+    header {
+        color: $gray-hhl;
+        font-size: 1.4rem;
+        font-weight: 100;
+        text-align: center;
+        text-transform: lowercase;
     }
     job {
         background: $bg-hhl;
@@ -366,24 +374,28 @@ a {
             display: block;
             background: $green;
             grid-column-start: 2;
-            grid-row-start: 1;
-            grid-row-end: 13;
+            grid-row: 2 / 15;
         }
-        job {
+        header {
+            display: block;
+        }
+        job,
+        header {
             margin: 0;
+            grid-column: span 1;
             &.lane-1 {
-                grid-column: 3;
+                grid-column-start: 3;
             }
             &.lane-2 {
                 grid-column-start: 4;
             }
-            &[length='2'] {
+            &.length-2 {
                 grid-row: span 2;
             }
-            &[length='3'] {
+            &.length-3 {
                 grid-row: span 3;
             }
-            &[length='4'] {
+            &.length-4 {
                 grid-row: span 4;
             }
         }
@@ -456,7 +468,7 @@ a {
 
 #contact {
     padding: 1rem;
-    > .block {
+    >.block {
         display: flex;
         flex-direction: column;
         justify-content: center;
