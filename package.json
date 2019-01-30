@@ -1,11 +1,11 @@
 {
   "name": "kenzie.ink",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/data-static_json-lightgrey.svg) ![](https://img.shields.io/badge/data-restdb-yellow.svg) ![](https://img.shields.io/badge/template-angular-red.svg) ![](https://img.shields.io/badge/modularity-browserify-yellow.svg) ![](https://img.shields.io/badge/css_framework-none-lightgrey.svg) ![](https://img.shields.io/badge/mvp-working-green.svg)",
+  "description": "Creative and technical portfolio site built with AngularJS.",
   "main": "Gruntfile.js",
   "dependencies": {
-    "angular": "^1.7.5",
-    "angular-sanitize": "^1.7.5",
+    "angular": "^1.7.6",
+    "angular-sanitize": "^1.7.6",
     "angular-ui-router": "^1.0.20",
     "browserify": "^16.2.3",
     "concurrently": "^4.1.0",

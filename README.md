@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/jquery-v3.3.1-005FAD.svg)
 ![](https://img.shields.io/badge/grunt-v1.0.3-ED8024.svg)
-![](https://img.shields.io/badge/angularJS-v1.7.5-D00027.svg)
+![](https://img.shields.io/badge/angularJS-v1.7.6-D00027.svg)
 ![](https://img.shields.io/badge/browserify-v16.2.3-E6B359.svg)
 
 Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v1) to [this repo](https://github.com/nss-day-cohort-23/personal-site-instructions).
@@ -17,8 +17,7 @@ Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v
 git clone git@github.com:kenziebottoms/kenziebottoms.github.io.git
 cd kenziebottoms.github.io
 npm install
-grunt
-hs -o
+npm dev
 ```
 
 ## Include
