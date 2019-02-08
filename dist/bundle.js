@@ -240,7 +240,7 @@ angular.module("io").config(($stateProvider, $urlRouterProvider) => {
 });
 },{}],14:[function(require,module,exports){
 /**
- * @license AngularJS v1.7.6
+ * @license AngularJS v1.7.7
  * (c) 2010-2018 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -952,7 +952,7 @@ function sanitizeText(chars) {
 // define ngSanitize module and register $sanitize service
 angular.module('ngSanitize', [])
   .provider('$sanitize', $SanitizeProvider)
-  .info({ angularVersion: '1.7.6' });
+  .info({ angularVersion: '1.7.7' });
 
 /**
  * @ngdoc filter

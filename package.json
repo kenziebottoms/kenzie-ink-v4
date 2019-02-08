@@ -4,8 +4,8 @@
   "description": "Creative and technical portfolio site built with AngularJS.",
   "main": "Gruntfile.js",
   "dependencies": {
-    "angular": "^1.7.6",
-    "angular-sanitize": "^1.7.6",
+    "angular": "^1.7.7",
+    "angular-sanitize": "^1.7.7",
     "angular-ui-router": "^1.0.20",
     "browserify": "^16.2.3",
     "concurrently": "^4.1.0",

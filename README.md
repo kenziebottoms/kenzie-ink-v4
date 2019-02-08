@@ -17,7 +17,7 @@ Adapted from [the first response](https://github.com/kenziebottoms/nss-my-site-v
 git clone git@github.com:kenziebottoms/kenziebottoms.github.io.git
 cd kenziebottoms.github.io
 npm install
-npm dev
+npm run dev
 ```
 
 ## Include
