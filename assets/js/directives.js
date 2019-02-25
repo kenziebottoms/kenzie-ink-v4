@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
-const $ = require("jquery");
+const $ = require('jquery');
 
-angular.module("io").directive("ngScript", () => {
-    return {
-        link: function (scope, element, attrs) {
-            $.getScript(attrs.ngScript);
-        }
-    };
+angular.module('io').directive('ngScript', () => {
+  return {
+    link: function(scope, element, attrs) {
+      $.getScript(attrs.ngScript);
+    },
+  };
 });

@@ -1,69 +1,75 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("ArtCtrl", function($scope, RestFactory) {
-    RestFactory.getArt()
-        .then(posts => {
-            $scope.blog = posts;
-        });
+angular.module('io').controller('ArtCtrl', function($scope, RestFactory) {
+  RestFactory.getArt().then(posts => {
+    $scope.blog = posts;
+  });
 });
+
 },{}],2:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("ArtPostCtrl", function($scope, $stateParams, RestFactory) {
-    RestFactory.getArtPost($stateParams.id)
-        .then(post => {
-            $scope.post = post;
-            $scope.post.body = $scope.post.body.replace(/<a /g,"<a target='blank' ");
-            RestFactory.getNextArtPost(post.date)
-                .then(data => {
-                    $scope.next = data[0]._id;
-                })
-                .catch(err => console.log(err));
-            RestFactory.getPrevArtPost(post.date)
-                .then(data => {
-                    $scope.prev = data[0]._id;
-                })
-                .catch(err => console.log(err));
-        });
-});
+angular
+  .module('io')
+  .controller('ArtPostCtrl', function($scope, $stateParams, RestFactory) {
+    RestFactory.getArtPost($stateParams.id).then(post => {
+      $scope.post = post;
+      $scope.post.body = $scope.post.body.replace(/<a /g, "<a target='blank' ");
+      RestFactory.getNextArtPost(post.date)
+        .then(data => {
+          $scope.next = data[0]._id;
+        })
+        .catch(err => console.log(err));
+      RestFactory.getPrevArtPost(post.date)
+        .then(data => {
+          $scope.prev = data[0]._id;
+        })
+        .catch(err => console.log(err));
+    });
+  });
+
 },{}],3:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("CodeCtrl", function($scope, RestFactory) {
-    RestFactory.getCode()
-        .then(posts => {
-            $scope.blog = posts;
-        });
+angular.module('io').controller('CodeCtrl', function($scope, RestFactory) {
+  RestFactory.getCode().then(posts => {
+    $scope.blog = posts;
+  });
 });
+
 },{}],4:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("CodePostCtrl", function($scope, $stateParams, RestFactory) {
-    RestFactory.getCodePost($stateParams.id)
-        .then(post => {
-            $scope.post = post;
-            $scope.post.body = $scope.post.body.replace(/<a /g,"<a target='blank' ");
-        });
-});
+angular
+  .module('io')
+  .controller('CodePostCtrl', function($scope, $stateParams, RestFactory) {
+    RestFactory.getCodePost($stateParams.id).then(post => {
+      $scope.post = post;
+      $scope.post.body = $scope.post.body.replace(/<a /g, "<a target='blank' ");
+    });
+  });
+
 },{}],5:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("ContactCtrl", function($scope) {
-    $scope.contact = {
-        "email": "kenziebottoms@gmail.com",
-        "github": "https://github.com/kenziebottoms",
-        "instagram": "https://www.instagram.com/kenziebottoms",
-        "twitter": "https://twitter.com/kenziebottoms",
-        "linkedin": "https://www.linkedin.com/in/kenzie-bottoms",
-        "codepen": "https://codepen.io/kenziebottoms/",
-        "artstation": "https://kenziebottoms.artstation.com/",
-        "society6": "https://society6.com/claquesous",
-        "redbubble": "https://www.redbubble.com/people/claquesous/shop",
-        "artistsnclients": "https://artistsnclients.com/people/kenziebottoms",
-        "vsmarketplace": "https://marketplace.visualstudio.com/publishers/kenziebottoms"
-    };
+angular.module('io').controller('ContactCtrl', function($scope) {
+  $scope.contact = {
+    email: 'kenziebottoms@gmail.com',
+    github: 'https://github.com/kenziebottoms',
+    instagram: 'https://www.instagram.com/kenziebottoms',
+    twitter: 'https://twitter.com/kenziebottoms',
+    linkedin: 'https://www.linkedin.com/in/kenzie-bottoms',
+    codepen: 'https://codepen.io/kenziebottoms/',
+    artstation: 'https://kenziebottoms.artstation.com/',
+    society6: 'https://society6.com/claquesous',
+    redbubble: 'https://www.redbubble.com/people/claquesous/shop',
+    artistsnclients: 'https://artistsnclients.com/people/kenziebottoms',
+    vsmarketplace:
+      'https://marketplace.visualstudio.com/publishers/kenziebottoms',
+  };
 });
+
 },{}],6:[function(require,module,exports){
 'use strict';
 
@@ -73,98 +79,120 @@ angular.module('io').controller('HomeCtrl', function($scope) {
 });
 
 },{}],7:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("MenuCtrl", function($scope, $state) {
-    $scope.state = $state;
+angular.module('io').controller('MenuCtrl', function($scope, $state) {
+  $scope.state = $state;
 });
+
 },{}],8:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").controller("ProjectsCtrl", function($scope, RestFactory) {
-    RestFactory.getBlog()
-        .then(blog => {
-            $scope.blog = blog;
-        });
+angular.module('io').controller('ProjectsCtrl', function($scope, RestFactory) {
+  RestFactory.getBlog().then(blog => {
+    $scope.blog = blog;
+  });
 });
+
 },{}],9:[function(require,module,exports){
-"use strict";
+'use strict';
 
-const $ = require("jquery");
+const $ = require('jquery');
 
-angular.module("io").directive("ngScript", () => {
-    return {
-        link: function (scope, element, attrs) {
-            $.getScript(attrs.ngScript);
-        }
-    };
+angular.module('io').directive('ngScript', () => {
+  return {
+    link: function(scope, element, attrs) {
+      $.getScript(attrs.ngScript);
+    },
+  };
 });
+
 },{"jquery":16}],10:[function(require,module,exports){
-"use strict";
+'use strict';
 
-const _ = require("lodash");
+const _ = require('lodash');
 
-angular.module("io").factory("RestFactory", function($q, $http, RESTDB) {
-    let getBlog = () => {
-        return $q((resolve, reject) => {
-            Promise.all([
-                getArt(),
-                getCode()
-            ]).then(results => {
-                resolve(_.sortBy(_.flatten(results), i => -i.date));
-            });
-        });
-    };
+angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
+  let getBlog = () => {
+    return $q((resolve, reject) => {
+      Promise.all([getArt(), getCode()]).then(results => {
+        resolve(_.sortBy(_.flatten(results), i => -i.date));
+      });
+    });
+  };
 
-    let getArt = () => {
-        return $q((resolve, reject) => {
-            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&sort=date&dir=-1`)
-                .then(({data}) => resolve(data))
-                .catch(err => reject(err));
-        });
-    };
-    let getCode = () => {
-        return $q((resolve, reject) => {
-            $http.get(`${RESTDB.url}/code?apikey=${RESTDB.key}&sort=date&dir=-1`)
-                .then(({data}) => resolve(data))
-                .catch(err => reject(err));
-        });
-    };
+  let getArt = () => {
+    return $q((resolve, reject) => {
+      $http
+        .get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&sort=date&dir=-1`)
+        .then(({ data }) => resolve(data))
+        .catch(err => reject(err));
+    });
+  };
+  let getCode = () => {
+    return $q((resolve, reject) => {
+      $http
+        .get(`${RESTDB.url}/code?apikey=${RESTDB.key}&sort=date&dir=-1`)
+        .then(({ data }) => resolve(data))
+        .catch(err => reject(err));
+    });
+  };
 
-    let getArtPost = id => {
-        return $q((resolve, reject) => {
-            $http.get(`${RESTDB.url}/artsy/${id}?apikey=${RESTDB.key}`)
-                .then(({data}) => resolve(data))
-                .catch(err => reject(err));
-        });
-    };
+  let getArtPost = id => {
+    return $q((resolve, reject) => {
+      $http
+        .get(`${RESTDB.url}/artsy/${id}?apikey=${RESTDB.key}`)
+        .then(({ data }) => resolve(data))
+        .catch(err => reject(err));
+    });
+  };
 
-    let getNextArtPost = date => {
-        return $q((resolve, reject) => {
-            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&q={"date":{"$lt": ${date}}}&sort=date&dir=-1&max=1`)
-                .then(({data}) => resolve(data))
-                .catch(err => reject(err));
-        });
-    };
+  let getNextArtPost = date => {
+    return $q((resolve, reject) => {
+      $http
+        .get(
+          `${RESTDB.url}/artsy?apikey=${
+            RESTDB.key
+          }&q={"date":{"$lt": ${date}}}&sort=date&dir=-1&max=1`
+        )
+        .then(({ data }) => resolve(data))
+        .catch(err => reject(err));
+    });
+  };
 
-    let getPrevArtPost = date => {
-        return $q((resolve, reject) => {
-            $http.get(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&q={"date":{"$gt": ${date}}}&sort=date&max=1`)
-                .then(({data}) => resolve(data))
-                .catch(err => reject(err));
-        });
-    };
+  let getPrevArtPost = date => {
+    return $q((resolve, reject) => {
+      $http
+        .get(
+          `${RESTDB.url}/artsy?apikey=${
+            RESTDB.key
+          }&q={"date":{"$gt": ${date}}}&sort=date&max=1`
+        )
+        .then(({ data }) => resolve(data))
+        .catch(err => reject(err));
+    });
+  };
 
-    let getCodePost = id => {
-        return $q((resolve, reject) => {
-            $http.get(`${RESTDB.url}/code/${id}?apikey=${RESTDB.key}`)
-                .then(({data}) => resolve(data))
-                .catch(err => reject(err));
-        });
-    };
+  let getCodePost = id => {
+    return $q((resolve, reject) => {
+      $http
+        .get(`${RESTDB.url}/code/${id}?apikey=${RESTDB.key}`)
+        .then(({ data }) => resolve(data))
+        .catch(err => reject(err));
+    });
+  };
 
-    return { getBlog, getArt, getCode, getArtPost, getCodePost, getNextArtPost, getPrevArtPost };
+  return {
+    getBlog,
+    getArt,
+    getCode,
+    getArtPost,
+    getCodePost,
+    getNextArtPost,
+    getPrevArtPost,
+  };
 });
+
 },{"lodash":17}],11:[function(require,module,exports){
 'use strict';
 
@@ -174,70 +202,72 @@ angular.module('io').constant('RESTDB', {
 });
 
 },{}],12:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io", ['ui.router', require('angular-sanitize')]);
+angular.module('io', ['ui.router', require('angular-sanitize')]);
 
-require("./router");
-require("./keys");
-require("./directives");
+require('./router');
+require('./keys');
+require('./directives');
 
-require("./ctrl/home");
-require("./ctrl/menu");
-require("./ctrl/projects");
-require("./ctrl/contact");
-require("./ctrl/art");
-require("./ctrl/code");
-require("./ctrl/artPost");
-require("./ctrl/codePost");
+require('./ctrl/home');
+require('./ctrl/menu');
+require('./ctrl/projects');
+require('./ctrl/contact');
+require('./ctrl/art');
+require('./ctrl/code');
+require('./ctrl/artPost');
+require('./ctrl/codePost');
 
-require("./factory/rest");
+require('./factory/rest');
+
 },{"./ctrl/art":1,"./ctrl/artPost":2,"./ctrl/code":3,"./ctrl/codePost":4,"./ctrl/contact":5,"./ctrl/home":6,"./ctrl/menu":7,"./ctrl/projects":8,"./directives":9,"./factory/rest":10,"./keys":11,"./router":13,"angular-sanitize":15}],13:[function(require,module,exports){
-"use strict";
+'use strict';
 
-angular.module("io").config(($stateProvider, $urlRouterProvider) => {
-    $stateProvider
-        .state("home", {
-            url: "/",
-            templateUrl: "assets/partials/home.html",
-            controller: "HomeCtrl"
-        })
-        .state("projects", {
-            url: "/projects",
-            templateUrl: "assets/partials/projects.html",
-            controller: "ProjectsCtrl"
-        })
-        .state("resume", {
-            url: "/resume",
-            templateUrl: "assets/partials/resume.html"
-        })
-        .state("contact", {
-            url: "/contact",
-            templateUrl: "assets/partials/contact.html",
-            controller: "ContactCtrl"
-        })
-        .state("art", {
-            url: "/projects/art",
-            templateUrl: "assets/partials/art.html",
-            controller: "ArtCtrl"
-        })
-        .state("code", {
-            url: "/projects/code",
-            templateUrl: "assets/partials/code.html",
-            controller: "CodeCtrl"
-        })
-        .state("codePost", {
-            url: "/code/:id",
-            templateUrl: "assets/partials/code-post.html",
-            controller: "CodePostCtrl"
-        })
-        .state("artPost", {
-            url: "/art/:id",
-            templateUrl: "assets/partials/art-post.html",
-            controller: "ArtPostCtrl"
-        });
-    $urlRouterProvider.otherwise("/");
+angular.module('io').config(($stateProvider, $urlRouterProvider) => {
+  $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'assets/partials/home.html',
+      controller: 'HomeCtrl',
+    })
+    .state('projects', {
+      url: '/projects',
+      templateUrl: 'assets/partials/projects.html',
+      controller: 'ProjectsCtrl',
+    })
+    .state('resume', {
+      url: '/resume',
+      templateUrl: 'assets/partials/resume.html',
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: 'assets/partials/contact.html',
+      controller: 'ContactCtrl',
+    })
+    .state('art', {
+      url: '/projects/art',
+      templateUrl: 'assets/partials/art.html',
+      controller: 'ArtCtrl',
+    })
+    .state('code', {
+      url: '/projects/code',
+      templateUrl: 'assets/partials/code.html',
+      controller: 'CodeCtrl',
+    })
+    .state('codePost', {
+      url: '/code/:id',
+      templateUrl: 'assets/partials/code-post.html',
+      controller: 'CodePostCtrl',
+    })
+    .state('artPost', {
+      url: '/art/:id',
+      templateUrl: 'assets/partials/art-post.html',
+      controller: 'ArtPostCtrl',
+    });
+  $urlRouterProvider.otherwise('/');
 });
+
 },{}],14:[function(require,module,exports){
 /**
  * @license AngularJS v1.7.7
