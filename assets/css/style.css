@@ -1,5 +1,8 @@
 html {
   font-size: 16px; }
+  @media (min-width: 30rem) {
+    html {
+      font-size: 18px; } }
   @media (min-width: 40rem) {
     html {
       font-size: 20px; } }
@@ -24,6 +27,22 @@ a {
   a:hover {
     text-decoration: none;
     color: #5fd3bb; }
+
+.page {
+  max-width: 75rem;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem; }
+  @media (min-width: 60rem) {
+    .page {
+      padding: 3rem; } }
+  @media (min-height: 50rem) {
+    .page {
+      padding: 5rem 3rem; } }
+  @media (min-height: 60rem) {
+    .page {
+      padding: 7rem 3rem; } }
 
 .loading {
   margin: 5rem auto;
@@ -269,70 +288,58 @@ a {
       margin-right: 0.5rem;
       vertical-align: middle; }
 
-#contact {
-  padding: 1rem; }
-  #contact > .block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    text-align: center; }
-  #contact img {
-    width: 2rem;
-    height: auto; }
-  #contact i {
-    font-size: 2rem; }
-  #contact img,
-  #contact i {
-    margin-bottom: 1rem;
-    color: #333; }
-  #contact #links {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 3; }
-    #contact #links a {
-      display: inline; }
-  @media (min-width: 40rem) {
-    #contact {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem; }
-      #contact .block {
-        margin: 0; }
-      #contact #links {
-        grid-column: span 2;
-        grid-row: 3; } }
-  @media (min-width: 60rem) {
-    #contact {
-      padding: 1rem 2rem;
-      grid-template-columns: repeat(3, 1fr); }
-      #contact #links {
-        grid-column: 2 / span 2;
-        grid-row: 1 / span 3; } }
-  @media (min-width: 80rem) {
-    #contact {
-      padding: 1rem 5rem;
-      grid-template-columns: repeat(4, 1fr); }
-      #contact #links {
-        grid-column: 3 / span 2;
-        grid-row: 1 / span 3; } }
+#contact > .block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-align: center; }
+#contact img {
+  width: 2rem;
+  height: auto; }
+#contact i {
+  color: #333;
+  font-size: 2rem; }
+#contact img,
+#contact i {
+  margin-right: 1rem; }
+#contact #links {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 3; }
+  #contact #links a {
+    display: inline; }
+@media (min-width: 40rem) {
+  #contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; }
+    #contact .block {
+      flex-direction: column;
+      margin: 0; }
+    #contact img,
+    #contact i {
+      margin-right: 0;
+      margin-bottom: 1rem; }
+    #contact #links {
+      grid-column: span 2;
+      grid-row: 3; } }
+@media (min-width: 60rem) {
+  #contact {
+    padding: 1rem 2rem;
+    grid-template-columns: repeat(3, 1fr); }
+    #contact #links {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 3; } }
+@media (min-width: 80rem) {
+  #contact {
+    padding: 1rem 5rem;
+    grid-template-columns: repeat(4, 1fr); }
+    #contact #links {
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 3; } }
 
 #home {
-  padding: 1rem;
-  max-width: 75rem;
-  margin: auto;
-  display: block;
-  font-size: 1.3rem;
-  box-sizing: border-box; }
-  @media (min-width: 60rem) {
-    #home {
-      padding: 3rem; } }
-  @media (min-height: 50rem) {
-    #home {
-      padding: 5rem 3rem; } }
-  @media (min-height: 60rem) {
-    #home {
-      padding: 7rem 3rem; } }
+  font-size: 1.3rem; }
   #home .block {
     margin-bottom: 1rem;
     display: flex;

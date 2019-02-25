@@ -1,19 +1,5 @@
 #home {
-    padding: 1rem;
-    @media (min-width: $md-lg) {
-        padding: 3rem;
-    }
-    @media (min-height: 50rem) {
-        padding: 5rem 3rem;
-    }
-    @media (min-height: 60rem) {
-        padding: 7rem 3rem;
-    }
-    max-width: 75rem;
-    margin: auto;
-    display: block;
     font-size: 1.3rem;
-    box-sizing: border-box;
     .block {
         margin-bottom: 1rem;
         display: flex;

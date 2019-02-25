@@ -1,4 +1,4 @@
-<div id="blog" ng-class="{active: blog}">
+<div class="page" id="blog" ng-class="{active: blog}">
     <div class="post" ng-class="{code: post.link || post.script, art: !post.link && !post.script}" ng-repeat="post in blog" style="background-image: url({{post.image}})">
         <a href="#!/{{post.link || post.script ? 'code' : 'art'}}/{{post._id}}">
             <div class="overlay">

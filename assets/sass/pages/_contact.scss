@@ -1,8 +1,6 @@
 #contact {
-    padding: 1rem;
-    >.block {
+    > .block {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
@@ -13,12 +11,12 @@
         height: auto;
     }
     i {
+        color: $black;
         font-size: 2rem;
     }
     img,
     i {
-        margin-bottom: 1rem;
-        color: $black;
+        margin-right: 1rem;
     }
     #links {
         grid-column: 3 / span 2;
@@ -28,12 +26,18 @@
         }
     }
     @media (min-width: $sm-md) {
-        .block {
-            margin: 0;
-        }
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
+        .block {
+            flex-direction: column;
+            margin: 0;
+        }
+        img,
+        i {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
         #links {
             grid-column: span 2;
             grid-row: 3;
