@@ -1,0 +1,53 @@
+#home {
+    padding: 1rem;
+    @media (min-width: $md-lg) {
+        padding: 3rem;
+    }
+    @media (min-height: 50rem) {
+        padding: 5rem 3rem;
+    }
+    @media (min-height: 60rem) {
+        padding: 7rem 3rem;
+    }
+    max-width: 75rem;
+    margin: auto;
+    display: block;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    .block {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #bio {
+        grid-row: span 2;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .art,
+    .code {
+        display: none;
+    }
+    i {
+        margin-bottom: 1rem;
+        font-size: 2em;
+        color: $black;
+    }
+    @media (min-width: $sm-md) {
+        display: grid;
+        height: 98vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        .block {
+            margin: 0;
+            display: flex;
+        }
+        .blog,
+        .contact,
+        .resume {
+            grid-column: span 2;
+        }
+    }
+}
