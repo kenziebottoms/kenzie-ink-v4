@@ -27,7 +27,7 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
       sec: false,
     },
     {
-      name: 'achievements',
+      name: 'badges',
       icon: 'stars',
       href: 'achievements',
       sec: false,
