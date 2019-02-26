@@ -16,6 +16,10 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
       url: '/resume',
       templateUrl: 'assets/partials/resume.html',
     })
+    .state('skills', {
+      url: '/skills',
+      templateUrl: 'assets/partials/skills.html',
+    })
     .state('contact', {
       url: '/contact',
       templateUrl: 'assets/partials/contact.html',

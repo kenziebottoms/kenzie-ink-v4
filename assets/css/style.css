@@ -21,6 +21,13 @@ date {
   font-weight: 300;
   display: block; }
 
+h1 {
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: lowercase; }
+
 a {
   color: #1b9b81;
   text-decoration: none; }
@@ -97,8 +104,7 @@ a {
         display: block;
         text-align: center; }
         #sidebar ul li a.sec {
-          background: #f0f0f0;
-          border-left: 0.5rem solid rgba(51, 51, 51, 0.25); }
+          background: #f0f0f0; }
         #sidebar ul li a:hover, #sidebar ul li a.active {
           background: #333;
           color: #e7e7e7; }
@@ -379,14 +385,8 @@ a {
       padding: 2rem; } }
   #resume year,
   #resume #green-border,
-  #resume header {
+  #resume h1 {
     display: none; }
-  #resume header {
-    color: #999;
-    font-size: 1.4rem;
-    font-weight: 100;
-    text-align: center;
-    text-transform: lowercase; }
   #resume job {
     background: #f6f6f6;
     padding: 1rem;
@@ -428,26 +428,26 @@ a {
         background: #5fd3bb;
         grid-column-start: 2;
         grid-row: 2 / 15; }
-      #resume header {
+      #resume h1 {
         display: block; }
       #resume job,
-      #resume header {
+      #resume h1 {
         margin: 0;
         grid-column: span 1; }
         #resume job.lane-1,
-        #resume header.lane-1 {
+        #resume h1.lane-1 {
           grid-column-start: 3; }
         #resume job.lane-2,
-        #resume header.lane-2 {
+        #resume h1.lane-2 {
           grid-column-start: 4; }
         #resume job.length-2,
-        #resume header.length-2 {
+        #resume h1.length-2 {
           grid-row: span 2; }
         #resume job.length-3,
-        #resume header.length-3 {
+        #resume h1.length-3 {
           grid-row: span 3; }
         #resume job.length-4,
-        #resume header.length-4 {
+        #resume h1.length-4 {
           grid-row: span 4; }
       #resume .align-self-start {
         align-self: start; }
@@ -455,5 +455,53 @@ a {
         align-self: center; }
       #resume .align-self-end {
         align-self: end; } }
+
+#skills .tree {
+  width: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem 0; }
+  #skills .tree .tree,
+  #skills .tree .skill {
+    grid-row: 1 / span 2; }
+    #skills .tree .tree.top,
+    #skills .tree .skill.top {
+      grid-row: 1; }
+    #skills .tree .tree.bottom,
+    #skills .tree .skill.bottom {
+      grid-row: 2; }
+  #skills .tree > .skill {
+    text-align: center;
+    box-sizing: border-box;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    #skills .tree > .skill > i {
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+      background: #333;
+      color: #5fd3bb;
+      height: 2.85rem;
+      width: 2.85rem;
+      padding: 0.4rem 0.25rem;
+      border-radius: 3rem;
+      font-size: 2rem;
+      vertical-align: top; }
+      #skills .tree > .skill > i.fake-icon {
+        font-style: normal;
+        padding: 0.05rem 0.25rem; }
+        #skills .tree > .skill > i.fake-icon.small {
+          font-size: 1.8rem; }
+#skills > .tree {
+  margin: 0; }
+  #skills > .tree > .skill:first-child > i {
+    color: #333;
+    background: #5fd3bb; }
 
 /*# sourceMappingURL=style.css.map */

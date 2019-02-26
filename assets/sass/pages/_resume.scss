@@ -6,15 +6,8 @@
     }
     year,
     #green-border,
-    header {
+    h1 {
         display: none;
-    }
-    header {
-        color: $gray-hhl;
-        font-size: 1.4rem;
-        font-weight: 100;
-        text-align: center;
-        text-transform: lowercase;
     }
     job {
         background: $bg-hhl;
@@ -65,11 +58,11 @@
             grid-column-start: 2;
             grid-row: 2 / 15;
         }
-        header {
+        h1 {
             display: block;
         }
         job,
-        header {
+        h1 {
             margin: 0;
             grid-column: span 1;
             &.lane-1 {

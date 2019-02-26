@@ -83,7 +83,7 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
     },
     {
       name: 'art',
-      icon: 'color_lens',
+      icon: 'palette',
       href: 'projects/art',
       sec: true,
     },
@@ -97,6 +97,12 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
       name: 'resume',
       icon: 'assignment_ind',
       href: 'resume',
+      sec: false,
+    },
+    {
+      name: 'skills',
+      icon: 'stars',
+      href: 'skills',
       sec: false,
     },
     {
