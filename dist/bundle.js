@@ -73,19 +73,43 @@ angular.module('io').controller('ContactCtrl', function($scope) {
 },{}],6:[function(require,module,exports){
 'use strict';
 
-angular.module('io').controller('HomeCtrl', function($scope) {
-  $scope.bio =
-    '<p>Kenzie Bottoms is a feminist, artist, and developer born and raised in Nashville. They are always open to new opportunities, technical or creative (or better yet, both), and their default mindset, for better or worse, is usually, "Challenge accepted." They skate with <a href="https://www.nashvillerollerderby.com/" target="blank">Nashville Roller Derby</a> under the name <a href="https://en.wikipedia.org/wiki/Ellen_Ripley" target="blank">Ellen R.I.P.ley</a>. They are a full-stack Node.js <a href="http://nashvillesoftwareschool.com/" target="blank">Nashville Software School</a> graduate, and have recently begun development work with <a href="https://fortyau.com/" target="blank">FortyAU</a>.</p>';
-});
-
-},{}],7:[function(require,module,exports){
-'use strict';
-
 angular.module('io').controller('MenuCtrl', function($scope, $state) {
+  $scope.items = [
+    {
+      name: 'projects',
+      icon: 'extension',
+      href: 'projects',
+      sec: false,
+    },
+    {
+      name: 'art',
+      icon: 'color_lens',
+      href: 'projects/art',
+      sec: true,
+    },
+    {
+      name: 'code',
+      icon: 'code',
+      href: 'projects/code',
+      sec: true,
+    },
+    {
+      name: 'resume',
+      icon: 'assignment_ind',
+      href: 'resume',
+      sec: false,
+    },
+    {
+      name: 'contact',
+      icon: 'info_outline',
+      href: 'contact',
+      sec: false,
+    },
+  ];
   $scope.state = $state;
 });
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 angular.module('io').controller('ProjectsCtrl', function($scope, RestFactory) {
@@ -94,7 +118,7 @@ angular.module('io').controller('ProjectsCtrl', function($scope, RestFactory) {
   });
 });
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 const $ = require('jquery');
@@ -107,7 +131,7 @@ angular.module('io').directive('ngScript', () => {
   };
 });
 
-},{"jquery":16}],10:[function(require,module,exports){
+},{"jquery":15}],9:[function(require,module,exports){
 'use strict';
 
 const _ = require('lodash');
@@ -193,7 +217,7 @@ angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
   };
 });
 
-},{"lodash":17}],11:[function(require,module,exports){
+},{"lodash":16}],10:[function(require,module,exports){
 'use strict';
 
 angular.module('io').constant('RESTDB', {
@@ -201,7 +225,7 @@ angular.module('io').constant('RESTDB', {
   key: '5a946ab3696ea8f017645933',
 });
 
-},{}],12:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 'use strict';
 
 angular.module('io', ['ui.router', require('angular-sanitize')]);
@@ -210,7 +234,6 @@ require('./router');
 require('./keys');
 require('./directives');
 
-require('./ctrl/home');
 require('./ctrl/menu');
 require('./ctrl/projects');
 require('./ctrl/contact');
@@ -221,7 +244,7 @@ require('./ctrl/codePost');
 
 require('./factory/rest');
 
-},{"./ctrl/art":1,"./ctrl/artPost":2,"./ctrl/code":3,"./ctrl/codePost":4,"./ctrl/contact":5,"./ctrl/home":6,"./ctrl/menu":7,"./ctrl/projects":8,"./directives":9,"./factory/rest":10,"./keys":11,"./router":13,"angular-sanitize":15}],13:[function(require,module,exports){
+},{"./ctrl/art":1,"./ctrl/artPost":2,"./ctrl/code":3,"./ctrl/codePost":4,"./ctrl/contact":5,"./ctrl/menu":6,"./ctrl/projects":7,"./directives":8,"./factory/rest":9,"./keys":10,"./router":12,"angular-sanitize":14}],12:[function(require,module,exports){
 'use strict';
 
 angular.module('io').config(($stateProvider, $urlRouterProvider) => {
@@ -239,6 +262,10 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
     .state('resume', {
       url: '/resume',
       templateUrl: 'assets/partials/resume.html',
+    })
+    .state('skills', {
+      url: '/skills',
+      templateUrl: 'assets/partials/skills.html',
     })
     .state('contact', {
       url: '/contact',
@@ -268,7 +295,7 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
   $urlRouterProvider.otherwise('/');
 });
 
-},{}],14:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /**
  * @license AngularJS v1.7.7
  * (c) 2010-2018 Google, Inc. http://angularjs.org
@@ -1183,11 +1210,11 @@ angular.module('ngSanitize').filter('linky', ['$sanitize', function($sanitize) {
 
 })(window, window.angular);
 
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 require('./angular-sanitize');
 module.exports = 'ngSanitize';
 
-},{"./angular-sanitize":14}],16:[function(require,module,exports){
+},{"./angular-sanitize":13}],15:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11553,7 +11580,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],17:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -28662,4 +28689,4 @@ return jQuery;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}]},{},[12]);
+},{}]},{},[11]);

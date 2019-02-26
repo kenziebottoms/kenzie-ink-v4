@@ -6,7 +6,6 @@ require('./router');
 require('./keys');
 require('./directives');
 
-require('./ctrl/home');
 require('./ctrl/menu');
 require('./ctrl/projects');
 require('./ctrl/contact');
