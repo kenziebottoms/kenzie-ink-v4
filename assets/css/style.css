@@ -459,11 +459,15 @@ a {
       #resume .align-self-end {
         align-self: end; } }
 
+#achievements h1 {
+  grid-column: span 2; }
 #achievements .achievement {
+  background: #f6f6f6;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-wrap: nowrap;
-  margin: 1rem 0;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1rem; }
   #achievements .achievement i {
     margin-right: 1rem;
     margin-bottom: 0;
@@ -485,6 +489,13 @@ a {
   #achievements .achievement h3,
   #achievements .achievement p {
     margin: 0.35rem 0; }
+@media (min-width: 40rem) {
+  #achievements {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 1rem; }
+    #achievements .achievement {
+      margin: 0; } }
 @media (min-width: 60rem) {
   #achievements {
     padding: 2rem; } }

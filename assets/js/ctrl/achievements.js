@@ -10,7 +10,12 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
     {
       title: 'Finders Keepers',
       icon: 'healing',
-      description: 'Find a bug in production with automated tests.',
+      description: 'Find a bug by writing automated tests.',
+    },
+    {
+      title: "You're Welcome",
+      icon: 'cast',
+      description: 'Demo a feature you built for a client.',
     },
     {
       title: 'My Stomach Hurts',
@@ -50,7 +55,7 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
     {
       title: 'Buckle Up',
       icon: 'send',
-      description: 'Merge 30 branches into master.',
+      description: 'Merge 20 branches into master.',
     },
   ];
 });
