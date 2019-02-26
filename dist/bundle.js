@@ -14,6 +14,21 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Find a bug in production with automated tests.',
     },
     {
+      title: 'My Stomach Hurts',
+      icon: 'error',
+      description: 'Write informative, specific error messages.',
+    },
+    {
+      title: 'Autocorrect',
+      icon: 'spellcheck',
+      description: "Correct a misspelled variable that isn't hurting anyone.",
+    },
+    {
+      title: 'Shrug Emoji',
+      icon: 'tag_faces',
+      description: 'Create 10 slack emojis.',
+    },
+    {
       title: '3 Characters Per Minute',
       icon: 'keyboard',
       description: 'Write 20 aliases for Zsh.',
