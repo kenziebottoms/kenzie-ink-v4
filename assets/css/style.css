@@ -456,52 +456,58 @@ a {
       #resume .align-self-end {
         align-self: end; } }
 
-#skills .tree {
-  width: auto;
-  display: grid;
-  grid-template-rows: auto auto;
-  align-items: center;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 1rem;
-  margin: 2rem 0; }
-  #skills .tree .tree,
-  #skills .tree .skill {
-    grid-row: 1 / span 2; }
-    #skills .tree .tree.top,
-    #skills .tree .skill.top {
-      grid-row: 1; }
-    #skills .tree .tree.bottom,
-    #skills .tree .skill.bottom {
-      grid-row: 2; }
-  #skills .tree > .skill {
-    text-align: center;
-    box-sizing: border-box;
+#skills {
+  margin: 0 2rem; }
+  #skills .tree {
     width: auto;
-    display: flex;
+    background: #f6f6f6;
+    display: grid;
+    grid-template-rows: auto auto;
     align-items: center;
-    flex-direction: column; }
-    #skills .tree > .skill > i {
-      box-sizing: border-box;
+    justify-items: flex-start;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1rem 0.5rem; }
+    #skills .tree .tree,
+    #skills .tree .skill {
+      grid-row: 1 / span 2; }
+      #skills .tree .tree.top,
+      #skills .tree .skill.top {
+        grid-row: 1; }
+      #skills .tree .tree.bottom,
+      #skills .tree .skill.bottom {
+        grid-row: 2; }
+    #skills .tree > .skill {
       text-align: center;
-      margin-bottom: 0.5rem;
-      display: inline-block;
-      background: #333;
-      color: #5fd3bb;
-      height: 2.85rem;
-      width: 2.85rem;
-      padding: 0.4rem 0.25rem;
-      border-radius: 3rem;
-      font-size: 2rem;
-      vertical-align: top; }
-      #skills .tree > .skill > i.fake-icon {
-        font-style: normal;
-        padding: 0.05rem 0.25rem; }
-        #skills .tree > .skill > i.fake-icon.small {
-          font-size: 1.8rem; }
-#skills > .tree {
-  margin: 0; }
-  #skills > .tree > .skill:first-child > i {
-    color: #333;
-    background: #5fd3bb; }
+      box-sizing: border-box;
+      width: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      #skills .tree > .skill > i {
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        background: #333;
+        color: #5fd3bb;
+        height: 2.85rem;
+        width: 2.85rem;
+        padding: 0.4rem 0.25rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+        vertical-align: top; }
+        #skills .tree > .skill > i.fake-icon {
+          font-style: normal;
+          padding: 0.05rem 0.25rem; }
+          #skills .tree > .skill > i.fake-icon.small {
+            font-size: 1.8rem; }
+  #skills > .tree {
+    padding: 1rem;
+    margin: 3rem 0; }
+    #skills > .tree > .skill:first-child {
+      margin-right: 1rem; }
+      #skills > .tree > .skill:first-child > i {
+        color: #333;
+        background: #5fd3bb; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,14 @@
 #skills {
+    margin: 0 2rem;
     .tree {
         width: auto;
+        background: $bg-hhl;
         display: grid;
         grid-template-rows: auto auto;
         align-items: center;
+        justify-items: flex-start;
         grid-template-columns: repeat(8, 1fr);
-        grid-gap: 1rem;
-        margin: 2rem 0;
+        grid-gap: 1rem 0.5rem;
         .tree,
         .skill {
             grid-row: 1 / span 2;
@@ -48,8 +50,10 @@
         }
     }
     >.tree {
-        margin: 0;
+        padding: 1rem;
+        margin: 3rem 0;
         >.skill:first-child {
+            margin-right: 1rem;
             >i {
                 color: $black;
                 background: $green;
