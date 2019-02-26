@@ -9,6 +9,7 @@ require('./directives');
 require('./ctrl/menu');
 require('./ctrl/projects');
 require('./ctrl/contact');
+require('./ctrl/achievements');
 require('./ctrl/art');
 require('./ctrl/code');
 require('./ctrl/artPost');

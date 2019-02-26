@@ -1,13 +1,41 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
 
+angular.module('io').controller('AchievementCtrl', function($scope) {
+  $scope.achievements = [
+    {
+      title: 'Bulletproof',
+      icon: 'security',
+      description: 'Write 100% test coverage for a unit of code.',
+    },
+    {
+      title: 'Good Thing I Found It First',
+      icon: 'healing',
+      description: 'Find a bug with automated tests.',
+    },
+    {
+      title: '',
+      icon: '',
+      description: '',
+    },
+    {
+      title: '',
+      icon: '',
+      description: '',
+    },
+  ];
+});
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
 angular.module('io').controller('ArtCtrl', function($scope, RestFactory) {
   RestFactory.getArt().then(posts => {
     $scope.blog = posts;
   });
 });
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
 
 angular
@@ -29,7 +57,7 @@ angular
     });
   });
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 angular.module('io').controller('CodeCtrl', function($scope, RestFactory) {
@@ -38,7 +66,7 @@ angular.module('io').controller('CodeCtrl', function($scope, RestFactory) {
   });
 });
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 angular
@@ -50,7 +78,7 @@ angular
     });
   });
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 angular.module('io').controller('ContactCtrl', function($scope) {
@@ -70,7 +98,7 @@ angular.module('io').controller('ContactCtrl', function($scope) {
   };
 });
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 angular.module('io').controller('MenuCtrl', function($scope, $state) {
@@ -100,6 +128,12 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
       sec: false,
     },
     {
+      name: 'achievements',
+      icon: 'stars',
+      href: 'achievements',
+      sec: false,
+    },
+    {
       name: 'contact',
       icon: 'info_outline',
       href: 'contact',
@@ -109,7 +143,7 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
   $scope.state = $state;
 });
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 angular.module('io').controller('ProjectsCtrl', function($scope, RestFactory) {
@@ -118,7 +152,7 @@ angular.module('io').controller('ProjectsCtrl', function($scope, RestFactory) {
   });
 });
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 const $ = require('jquery');
@@ -131,7 +165,7 @@ angular.module('io').directive('ngScript', () => {
   };
 });
 
-},{"jquery":15}],9:[function(require,module,exports){
+},{"jquery":16}],10:[function(require,module,exports){
 'use strict';
 
 const _ = require('lodash');
@@ -217,7 +251,7 @@ angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
   };
 });
 
-},{"lodash":16}],10:[function(require,module,exports){
+},{"lodash":17}],11:[function(require,module,exports){
 'use strict';
 
 angular.module('io').constant('RESTDB', {
@@ -225,7 +259,7 @@ angular.module('io').constant('RESTDB', {
   key: '5a946ab3696ea8f017645933',
 });
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 'use strict';
 
 angular.module('io', ['ui.router', require('angular-sanitize')]);
@@ -237,6 +271,7 @@ require('./directives');
 require('./ctrl/menu');
 require('./ctrl/projects');
 require('./ctrl/contact');
+require('./ctrl/achievements');
 require('./ctrl/art');
 require('./ctrl/code');
 require('./ctrl/artPost');
@@ -244,7 +279,7 @@ require('./ctrl/codePost');
 
 require('./factory/rest');
 
-},{"./ctrl/art":1,"./ctrl/artPost":2,"./ctrl/code":3,"./ctrl/codePost":4,"./ctrl/contact":5,"./ctrl/menu":6,"./ctrl/projects":7,"./directives":8,"./factory/rest":9,"./keys":10,"./router":12,"angular-sanitize":14}],12:[function(require,module,exports){
+},{"./ctrl/achievements":1,"./ctrl/art":2,"./ctrl/artPost":3,"./ctrl/code":4,"./ctrl/codePost":5,"./ctrl/contact":6,"./ctrl/menu":7,"./ctrl/projects":8,"./directives":9,"./factory/rest":10,"./keys":11,"./router":13,"angular-sanitize":15}],13:[function(require,module,exports){
 'use strict';
 
 angular.module('io').config(($stateProvider, $urlRouterProvider) => {
@@ -263,9 +298,10 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
       url: '/resume',
       templateUrl: 'assets/partials/resume.html',
     })
-    .state('skills', {
-      url: '/skills',
-      templateUrl: 'assets/partials/skills.html',
+    .state('achievements', {
+      url: '/achievements',
+      templateUrl: 'assets/partials/achievements.html',
+      controller: 'AchievementCtrl',
     })
     .state('contact', {
       url: '/contact',
@@ -295,7 +331,7 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
   $urlRouterProvider.otherwise('/');
 });
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /**
  * @license AngularJS v1.7.7
  * (c) 2010-2018 Google, Inc. http://angularjs.org
@@ -1210,11 +1246,11 @@ angular.module('ngSanitize').filter('linky', ['$sanitize', function($sanitize) {
 
 })(window, window.angular);
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 require('./angular-sanitize');
 module.exports = 'ngSanitize';
 
-},{"./angular-sanitize":13}],15:[function(require,module,exports){
+},{"./angular-sanitize":14}],16:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11580,7 +11616,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -28689,4 +28725,4 @@ return jQuery;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}]},{},[11]);
+},{}]},{},[12]);

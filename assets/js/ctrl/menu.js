@@ -27,6 +27,12 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
       sec: false,
     },
     {
+      name: 'achievements',
+      icon: 'stars',
+      href: 'achievements',
+      sec: false,
+    },
+    {
       name: 'contact',
       icon: 'info_outline',
       href: 'contact',
