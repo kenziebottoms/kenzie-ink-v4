@@ -85,7 +85,8 @@ a {
     opacity: 1; }
   #sidebar #logo a {
     padding-top: 1rem;
-    background: #5fd3bb; }
+    background: #5fd3bb;
+    color: #333; }
     #sidebar #logo a:hover {
       background: #333;
       color: #5fd3bb; }
@@ -106,8 +107,7 @@ a {
         text-align: center;
         word-wrap: wrap; }
         #sidebar ul li a.sec {
-          background: #f0f0f0;
-          border-left: 0.5rem solid rgba(51, 51, 51, 0.25); }
+          background: #f0f0f0; }
         #sidebar ul li a:hover, #sidebar ul li a.active {
           background: #333;
           color: #e7e7e7; }
@@ -477,7 +477,7 @@ a {
     color: #5fd3bb;
     height: 2.85rem;
     width: 2.85rem;
-    padding: 0.4rem 0.25rem;
+    padding: 0.4rem;
     border-radius: 3rem;
     font-size: 2rem;
     vertical-align: top; }

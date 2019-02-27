@@ -19,6 +19,17 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Demo a feature you built for a client.',
     },
     {
+      title: 'Jam On',
+      icon: 'stars',
+      description:
+        'Score 20 points in <a href="https://en.wikipedia.org/wiki/Roller_derby#Jams" target="blank">one jam</a>.',
+    },
+    {
+      title: 'Beat The Game',
+      icon: 'access_time',
+      description: 'Spend more than 50 hours on a single piece of art.',
+    },
+    {
       title: 'My Stomach Hurts',
       icon: 'error',
       description: 'Write informative, specific error messages.',
@@ -36,7 +47,8 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
     {
       title: '3 Characters Per Minute',
       icon: 'keyboard',
-      description: 'Write 20 aliases for Zsh.',
+      description:
+        'Write 20 aliases for <a href="https://ohmyz.sh/" target="blank">Zsh</a>.',
     },
     {
       title: 'Pushover',

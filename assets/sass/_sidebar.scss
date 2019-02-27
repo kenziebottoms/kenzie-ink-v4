@@ -11,6 +11,7 @@
         a {
             padding-top: 1rem;
             background: $green;
+            color: $black;
             &:hover {
                 background: $black;
                 color: $green;
@@ -36,7 +37,6 @@
                 word-wrap: wrap;
                 &.sec {
                     background: $bg-hl;
-                    border-left: 0.5rem solid rgba($black, 0.25);
                 }
                 &:hover,
                 &.active {
