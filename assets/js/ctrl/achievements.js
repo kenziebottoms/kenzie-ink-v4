@@ -18,6 +18,12 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Demo a feature you built for a client.',
     },
     {
+      title: 'It\'s Pronounced "Oiler"',
+      icon: 'functions',
+      description:
+        'Solve 20 problems on <a href="https://projecteuler.net/about" target="blank">Project Euler</a>.',
+    },
+    {
       title: 'Jam On',
       icon: 'stars',
       description:
@@ -27,11 +33,6 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       title: 'Beat The Game',
       icon: 'access_time',
       description: 'Spend more than 50 hours on a single piece of art.',
-    },
-    {
-      title: 'My Stomach Hurts',
-      icon: 'error',
-      description: 'Write informative, specific error messages.',
     },
     {
       title: 'Autocorrect',
@@ -44,7 +45,7 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Create 10 slack emojis.',
     },
     {
-      title: '3 Characters Per Minute',
+      title: 'Hacker Mode',
       icon: 'keyboard',
       description:
         'Write 20 aliases for <a href="https://ohmyz.sh/" target="blank">Zsh</a>.',
@@ -55,7 +56,7 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Approve 20 pull requests.',
     },
     {
-      title: "Teacher's Pet",
+      title: 'Debbie Downer',
       icon: 'assignment_late',
       description: 'Reject 1 pull request.',
     },

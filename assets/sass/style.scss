@@ -83,9 +83,6 @@ a {
 .block {
     padding: 1rem;
     background: $bg-hhl;
-    &.sec {
-        background: $bg-hl;
-    }
 }
 
 .sec {
@@ -252,7 +249,7 @@ a {
     }
     .body {
         max-width: 100%;
-        > a {
+        >a {
             max-width: 100%;
             overflow: hidden;
             display: block;

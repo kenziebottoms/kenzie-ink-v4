@@ -71,8 +71,6 @@ a {
 .block {
   padding: 1rem;
   background: #f6f6f6; }
-  .block.sec {
-    background: #f0f0f0; }
 
 .sec {
   background: #f0f0f0; }
@@ -377,7 +375,8 @@ a {
         display: flex; }
       #home .blog,
       #home .contact,
-      #home .resume {
+      #home .resume,
+      #home .achievements {
         grid-column: span 2; } }
 
 #resume {
