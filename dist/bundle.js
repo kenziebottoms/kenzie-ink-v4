@@ -22,13 +22,19 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       title: 'It\'s Pronounced "Oiler"',
       icon: 'functions',
       description:
-        'Solve 20 problems on <a href="https://projecteuler.net/about" target="blank">Project Euler</a>.',
+        'Solve 25 problems on <a href="https://projecteuler.net/about" target="blank">Project Euler</a>.',
     },
     {
       title: 'Jam On',
       icon: 'stars',
       description:
         'Score 20 points in <a href="https://en.wikipedia.org/wiki/Roller_derby#Jams" target="blank">one jam</a>.',
+    },
+    {
+      title: '1,667 Words A Day',
+      icon: 'chrome_reader_mode',
+      description:
+        'Beat <a href="https://nanowrimo.org/about" target="blank">NaNoWriMo</a>.',
     },
     {
       title: 'Beat The Game',
