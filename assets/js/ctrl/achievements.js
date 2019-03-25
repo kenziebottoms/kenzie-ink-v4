@@ -41,7 +41,7 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Write your own color theme for a text editor.',
     },
     {
-      title: 'Release Me',
+      title: 'Perfectionist',
       icon: 'access_time',
       description: 'Spend more than 50 hours on a single piece of art.',
     },

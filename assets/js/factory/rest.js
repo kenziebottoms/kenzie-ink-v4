@@ -3,14 +3,6 @@
 const _ = require('lodash');
 
 angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
-  let getBlog = () => {
-    return $q((resolve, reject) => {
-      Promise.all([getArt(), getCode()]).then(results => {
-        resolve(_.sortBy(_.flatten(results), i => -i.date));
-      });
-    });
-  };
-
   let getArt = () => {
     return $q((resolve, reject) => {
       $http
@@ -73,7 +65,6 @@ angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
   };
 
   return {
-    getBlog,
     getArt,
     getCode,
     getArtPost,

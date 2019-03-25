@@ -42,7 +42,7 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Write your own color theme for a text editor.',
     },
     {
-      title: 'Release Me',
+      title: 'Perfectionist',
       icon: 'access_time',
       description: 'Spend more than 50 hours on a single piece of art.',
     },
@@ -153,55 +153,35 @@ angular.module('io').controller('ContactCtrl', function($scope) {
 angular.module('io').controller('MenuCtrl', function($scope, $state) {
   $scope.items = [
     {
-      name: 'projects',
-      icon: 'extension',
-      href: 'projects',
-      sec: false,
-    },
-    {
       name: 'art',
       icon: 'color_lens',
       href: 'projects/art',
-      sec: true,
     },
     {
       name: 'code',
       icon: 'code',
       href: 'projects/code',
-      sec: true,
     },
     {
       name: 'resume',
       icon: 'assignment_ind',
       href: 'resume',
-      sec: false,
     },
     {
       name: 'badges',
       icon: 'stars',
       href: 'achievements',
-      sec: false,
     },
     {
       name: 'contact',
       icon: 'info_outline',
       href: 'contact',
-      sec: false,
     },
   ];
   $scope.state = $state;
 });
 
 },{}],8:[function(require,module,exports){
-'use strict';
-
-angular.module('io').controller('ProjectsCtrl', function($scope, RestFactory) {
-  RestFactory.getBlog().then(blog => {
-    $scope.blog = blog;
-  });
-});
-
-},{}],9:[function(require,module,exports){
 'use strict';
 
 const $ = require('jquery');
@@ -214,20 +194,12 @@ angular.module('io').directive('ngScript', () => {
   };
 });
 
-},{"jquery":16}],10:[function(require,module,exports){
+},{"jquery":15}],9:[function(require,module,exports){
 'use strict';
 
 const _ = require('lodash');
 
 angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
-  let getBlog = () => {
-    return $q((resolve, reject) => {
-      Promise.all([getArt(), getCode()]).then(results => {
-        resolve(_.sortBy(_.flatten(results), i => -i.date));
-      });
-    });
-  };
-
   let getArt = () => {
     return $q((resolve, reject) => {
       $http
@@ -290,7 +262,6 @@ angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
   };
 
   return {
-    getBlog,
     getArt,
     getCode,
     getArtPost,
@@ -300,7 +271,7 @@ angular.module('io').factory('RestFactory', function($q, $http, RESTDB) {
   };
 });
 
-},{"lodash":17}],11:[function(require,module,exports){
+},{"lodash":16}],10:[function(require,module,exports){
 'use strict';
 
 angular.module('io').constant('RESTDB', {
@@ -308,7 +279,7 @@ angular.module('io').constant('RESTDB', {
   key: '5a946ab3696ea8f017645933',
 });
 
-},{}],12:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 'use strict';
 
 angular.module('io', ['ui.router', require('angular-sanitize')]);
@@ -318,7 +289,6 @@ require('./keys');
 require('./directives');
 
 require('./ctrl/menu');
-require('./ctrl/projects');
 require('./ctrl/contact');
 require('./ctrl/achievements');
 require('./ctrl/art');
@@ -328,7 +298,7 @@ require('./ctrl/codePost');
 
 require('./factory/rest');
 
-},{"./ctrl/achievements":1,"./ctrl/art":2,"./ctrl/artPost":3,"./ctrl/code":4,"./ctrl/codePost":5,"./ctrl/contact":6,"./ctrl/menu":7,"./ctrl/projects":8,"./directives":9,"./factory/rest":10,"./keys":11,"./router":13,"angular-sanitize":15}],13:[function(require,module,exports){
+},{"./ctrl/achievements":1,"./ctrl/art":2,"./ctrl/artPost":3,"./ctrl/code":4,"./ctrl/codePost":5,"./ctrl/contact":6,"./ctrl/menu":7,"./directives":8,"./factory/rest":9,"./keys":10,"./router":12,"angular-sanitize":14}],12:[function(require,module,exports){
 'use strict';
 
 angular.module('io').config(($stateProvider, $urlRouterProvider) => {
@@ -380,7 +350,7 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
   $urlRouterProvider.otherwise('/');
 });
 
-},{}],14:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /**
  * @license AngularJS v1.7.7
  * (c) 2010-2018 Google, Inc. http://angularjs.org
@@ -1295,11 +1265,11 @@ angular.module('ngSanitize').filter('linky', ['$sanitize', function($sanitize) {
 
 })(window, window.angular);
 
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 require('./angular-sanitize');
 module.exports = 'ngSanitize';
 
-},{"./angular-sanitize":14}],16:[function(require,module,exports){
+},{"./angular-sanitize":13}],15:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -11665,7 +11635,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],17:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -28774,4 +28744,4 @@ return jQuery;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}]},{},[12]);
+},{}]},{},[11]);
