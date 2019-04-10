@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('io').controller('ContactCtrl', function($scope) {
-  $scope.contact = {
+angular.module('io').controller('LinksCtrl', function($scope) {
+  $scope.links = {
     email: 'kenziebottoms@gmail.com',
     github: 'https://github.com/kenziebottoms',
     instagram: 'https://www.instagram.com/kenziebottoms',

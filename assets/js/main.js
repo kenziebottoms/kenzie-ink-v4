@@ -7,7 +7,7 @@ require('./keys');
 require('./directives');
 
 require('./ctrl/menu');
-require('./ctrl/contact');
+require('./ctrl/links');
 require('./ctrl/achievements');
 require('./ctrl/art');
 require('./ctrl/code');

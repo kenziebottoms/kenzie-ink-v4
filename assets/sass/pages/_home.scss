@@ -1,5 +1,13 @@
 #home {
     font-size: 1.3rem;
+
+    .subtext {
+        font-size: 0.8rem;
+        text-align: center;
+        color: $gray-hhl;
+        grid-column: 1 / -1;
+    }
+
     .block {
         margin-bottom: 1rem;
         display: flex;
@@ -7,31 +15,37 @@
         align-items: center;
         justify-content: center;
     }
+
     #bio {
         grid-row: span 2;
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .art,
     .code {
         display: none;
     }
+
     i {
         margin-bottom: 1rem;
         font-size: 2em;
         color: $black;
     }
+
     @media (min-width: $sm-md) {
         display: grid;
         height: 98vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1rem;
+
         .block {
             margin: 0;
             display: flex;
         }
+
         .blog,
-        .contact,
+        .links,
         .resume,
         .achievements {
             grid-column: span 2;

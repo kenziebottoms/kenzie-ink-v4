@@ -130,8 +130,8 @@ angular
 },{}],6:[function(require,module,exports){
 'use strict';
 
-angular.module('io').controller('ContactCtrl', function($scope) {
-  $scope.contact = {
+angular.module('io').controller('LinksCtrl', function($scope) {
+  $scope.links = {
     email: 'kenziebottoms@gmail.com',
     github: 'https://github.com/kenziebottoms',
     instagram: 'https://www.instagram.com/kenziebottoms',
@@ -168,14 +168,14 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
       href: 'resume',
     },
     {
-      name: 'badges',
+      name: 'feats',
       icon: 'stars',
       href: 'achievements',
     },
     {
-      name: 'contact',
-      icon: 'info_outline',
-      href: 'contact',
+      name: 'links',
+      icon: 'launch',
+      href: 'links',
     },
   ];
   $scope.state = $state;
@@ -289,7 +289,7 @@ require('./keys');
 require('./directives');
 
 require('./ctrl/menu');
-require('./ctrl/contact');
+require('./ctrl/links');
 require('./ctrl/achievements');
 require('./ctrl/art');
 require('./ctrl/code');
@@ -298,7 +298,7 @@ require('./ctrl/codePost');
 
 require('./factory/rest');
 
-},{"./ctrl/achievements":1,"./ctrl/art":2,"./ctrl/artPost":3,"./ctrl/code":4,"./ctrl/codePost":5,"./ctrl/contact":6,"./ctrl/menu":7,"./directives":8,"./factory/rest":9,"./keys":10,"./router":12,"angular-sanitize":14}],12:[function(require,module,exports){
+},{"./ctrl/achievements":1,"./ctrl/art":2,"./ctrl/artPost":3,"./ctrl/code":4,"./ctrl/codePost":5,"./ctrl/links":6,"./ctrl/menu":7,"./directives":8,"./factory/rest":9,"./keys":10,"./router":12,"angular-sanitize":14}],12:[function(require,module,exports){
 'use strict';
 
 angular.module('io').config(($stateProvider, $urlRouterProvider) => {
@@ -324,8 +324,12 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: 'assets/partials/contact.html',
-      controller: 'ContactCtrl',
+      redirectTo: 'links',
+    })
+    .state('links', {
+      url: '/links',
+      templateUrl: 'assets/partials/links.html',
+      controller: 'LinksCtrl',
     })
     .state('art', {
       url: '/projects/art',

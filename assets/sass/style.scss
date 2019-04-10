@@ -1,10 +1,13 @@
 @import 'colors';
 @import 'sizing';
+
 html {
     font-size: 16px;
+
     @media (min-width: $xs-sm) {
         font-size: 18px;
     }
+
     @media (min-width: $sm-md) {
         font-size: 20px;
     }
@@ -37,6 +40,7 @@ date {
 a {
     color: $green-ll;
     text-decoration: none;
+
     &:hover {
         text-decoration: none;
         color: $green;
@@ -49,12 +53,15 @@ a {
     display: block;
     box-sizing: border-box;
     padding: 1rem;
+
     @media (min-width: $md-lg) {
         padding: 3rem;
     }
+
     @media (min-height: 50rem) {
         padding: 5rem 3rem;
     }
+
     @media (min-height: 60rem) {
         padding: 7rem 3rem;
     }
@@ -71,9 +78,11 @@ a {
     opacity: 0;
     transition: 0.2s;
     z-index: -300;
+
     &.active {
         opacity: 1;
     }
+
     img {
         height: 90px;
         width: 90px;
@@ -90,6 +99,7 @@ a {
 }
 
 @import 'sidebar';
+
 #content {
     height: 100vh;
     overflow-y: auto;
@@ -101,11 +111,14 @@ a {
 #blog {
     opacity: 0;
     transition: 0.5s;
+
     &.active {
         opacity: 1;
     }
+
     padding: 0;
     margin: 0;
+
     .post {
         display: block;
         margin: 0;
@@ -114,9 +127,11 @@ a {
         background-size: cover;
         transition: 0.2s;
         filter: grayscale(0.8);
+
         &:hover {
             filter: grayscale(0);
         }
+
         .overlay {
             padding: 1rem 1rem;
             color: $white;
@@ -128,18 +143,22 @@ a {
             background: rgba($black, 0.4);
         }
     }
+
     @media (min-width: $xs-sm) {
         .post .overlay {
             padding: 2rem 1rem;
         }
     }
+
     @media (min-width: $sm-md) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     @media (min-width: $md-lg) {
         grid-template-columns: repeat(3, 1fr);
     }
+
     @media (min-width: $lg-xl) {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -156,17 +175,21 @@ a {
     height: 98vh;
     box-sizing: border-box;
     padding: 1rem;
+
     img {
         max-width: 100%;
         max-height: 100%;
     }
+
     date {
         margin-bottom: 0.5rem;
     }
+
     @media (min-width: $sm-md) {
         display: grid;
         grid-gap: 1rem;
         grid-template: 1fr / 1fr;
+
         .body {
             justify-self: center;
         }
@@ -177,6 +200,7 @@ a {
     @media (min-width: $sm-md) {
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: 1fr auto;
+
         img,
         .body {
             box-sizing: border-box;
@@ -185,9 +209,11 @@ a {
             margin: auto;
         }
     }
+
     #prev,
     #next {
         display: none;
+
         @media (min-width: $sm-md) {
             display: inline-block;
             align-self: center;
@@ -198,22 +224,26 @@ a {
             box-sizing: border-box;
             transition: 0.2s;
             font-size: 1.9rem;
+
             &:hover {
                 background: $black;
                 color: $green;
             }
         }
+
         i {
             font-size: inherit;
             vertical-align: middle;
         }
     }
+
     #prev {
         justify-self: right;
         margin-right: -1em;
         border-radius: 50% 0 0 50%;
         padding: 0.25em 0.05em;
     }
+
     #next {
         justify-self: left;
         margin-left: -1em;
@@ -227,28 +257,35 @@ a {
         text-align: center;
         width: 100%;
     }
+
     @media (min-width: $xs-sm) {
         padding: 1rem 3rem;
     }
+
     @media (min-width: $sm-md) {
         padding: 1rem;
         grid-template-columns: 50% 50%;
         align-content: center;
         height: 100vh;
+
         .hero {
             justify-self: center;
             max-height: 100%;
         }
     }
+
     @media (min-width: $md-lg) {
         grid-template-columns: 1fr 1fr;
         padding: 1rem 3rem;
     }
+
     @media (min-width: $lg-xl) {
         padding: 2rem 5rem;
     }
+
     .body {
         max-width: 100%;
+
         >a {
             max-width: 100%;
             overflow: hidden;
@@ -257,8 +294,10 @@ a {
             white-space: nowrap;
             padding: 0 1rem;
         }
+
         .link {
             padding: 0.25rem 0;
+
             i {
                 color: $black;
                 font-size: 2rem;
@@ -266,8 +305,10 @@ a {
                 vertical-align: middle;
             }
         }
+
         .github {
             padding: 0.25rem 0;
+
             img {
                 height: 2rem;
                 width: 2rem;
@@ -278,7 +319,7 @@ a {
     }
 }
 
-@import 'pages/contact';
+@import 'pages/links';
 @import 'pages/home';
 @import 'pages/resume';
 @import 'pages/achievements';

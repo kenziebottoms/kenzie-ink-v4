@@ -23,8 +23,12 @@ angular.module('io').config(($stateProvider, $urlRouterProvider) => {
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: 'assets/partials/contact.html',
-      controller: 'ContactCtrl',
+      redirectTo: 'links',
+    })
+    .state('links', {
+      url: '/links',
+      templateUrl: 'assets/partials/links.html',
+      controller: 'LinksCtrl',
     })
     .state('art', {
       url: '/projects/art',

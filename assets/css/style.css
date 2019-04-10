@@ -295,58 +295,63 @@ a {
       margin-right: 0.5rem;
       vertical-align: middle; }
 
-#contact > .block {
+#links > .block {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
   text-align: center; }
-#contact img {
+#links img {
   width: 2rem;
   height: auto; }
-#contact i {
+#links i {
   color: #333;
   font-size: 2rem; }
-#contact img,
-#contact i {
+#links img,
+#links i {
   margin-right: 1rem; }
-#contact #links {
+#links #links {
   grid-column: 3 / span 2;
   grid-row: 1 / span 3; }
-  #contact #links a {
+  #links #links a {
     display: inline; }
 @media (min-width: 40rem) {
-  #contact {
+  #links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem; }
-    #contact .block {
+    #links .block {
       flex-direction: column;
       margin: 0; }
-    #contact img,
-    #contact i {
+    #links img,
+    #links i {
       margin-right: 0;
       margin-bottom: 1rem; }
-    #contact #links {
+    #links #links {
       grid-column: span 2;
       grid-row: 3; } }
 @media (min-width: 60rem) {
-  #contact {
+  #links {
     padding: 1rem 2rem;
     grid-template-columns: repeat(3, 1fr); }
-    #contact #links {
+    #links #links {
       grid-column: 2 / span 2;
       grid-row: 1 / span 3; } }
 @media (min-width: 80rem) {
-  #contact {
+  #links {
     padding: 1rem 5rem;
     grid-template-columns: repeat(4, 1fr); }
-    #contact #links {
+    #links #links {
       grid-column: 3 / span 2;
       grid-row: 1 / span 3; } }
 
 #home {
   font-size: 1.3rem; }
+  #home .subtext {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #999;
+    grid-column: 1 / -1; }
   #home .block {
     margin-bottom: 1rem;
     display: flex;
@@ -374,7 +379,7 @@ a {
         margin: 0;
         display: flex; }
       #home .blog,
-      #home .contact,
+      #home .links,
       #home .resume,
       #home .achievements {
         grid-column: span 2; } }

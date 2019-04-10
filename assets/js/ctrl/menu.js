@@ -18,14 +18,14 @@ angular.module('io').controller('MenuCtrl', function($scope, $state) {
       href: 'resume',
     },
     {
-      name: 'badges',
+      name: 'feats',
       icon: 'stars',
       href: 'achievements',
     },
     {
-      name: 'contact',
-      icon: 'info_outline',
-      href: 'contact',
+      name: 'links',
+      icon: 'launch',
+      href: 'links',
     },
   ];
   $scope.state = $state;
