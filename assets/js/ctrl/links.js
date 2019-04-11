@@ -2,7 +2,11 @@
 
 angular.module('io').controller('LinksCtrl', function($scope) {
   $scope.links = [
-    { name: 'Email', href: 'kenziebottoms@gmail.com', image: 'email.svg' },
+    {
+      name: 'Email',
+      href: 'mailto:kenziebottoms@gmail.com',
+      image: 'email.svg',
+    },
     {
       name: 'GitHub',
       href: 'https://github.com/kenziebottoms',
