@@ -1,39 +1,38 @@
 {
-  "name": "kenzie.ink",
-  "version": "1.0.0",
-  "description": "Creative and technical portfolio site built with AngularJS.",
-  "main": "Gruntfile.js",
-  "dependencies": {
-    "angular": "^1.7.7",
-    "angular-sanitize": "^1.7.7",
-    "angular-ui-router": "^1.0.20",
-    "browserify": "^16.2.3",
-    "concurrently": "^4.1.0",
-    "grunt": "^1.0.3",
-    "grunt-browserify": "^5.3.0",
-    "grunt-contrib-jshint": "^2.0.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "http-server": "^0.11.1",
-    "jquery": "^3.3.1",
-    "matchdep": "^2.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "grunt",
-    "serve": "hs -o",
-    "dev": "concurrently --kill-others \"npm start\" \"npm run serve\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kenziebottoms/kenziebottoms.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kenziebottoms/kenziebottoms.github.io/issues"
-  },
-  "homepage": "https://github.com/kenziebottoms/kenziebottoms.github.io#readme"
+    "name": "kenzie.ink",
+    "version": "1.0.0",
+    "description": "Creative and technical portfolio site built with AngularJS.",
+    "main": "Gruntfile.js",
+    "dependencies": {
+        "angular": "^1.7.8",
+        "angular-sanitize": "^1.7.8",
+        "angular-ui-router": "^1.0.22",
+        "browserify": "^16.2.3",
+        "concurrently": "^4.1.0",
+        "grunt": "^1.0.4",
+        "grunt-browserify": "^5.3.0",
+        "grunt-contrib-jshint": "^2.1.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "http-server": "^0.11.1",
+        "jquery": "^3.4.1",
+        "matchdep": "^2.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "grunt",
+        "serve": "hs -o",
+        "dev": "concurrently --kill-others \"npm start\" \"npm run serve\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kenziebottoms/kenziebottoms.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kenziebottoms/kenziebottoms.github.io/issues"
+    },
+    "homepage": "https://github.com/kenziebottoms/kenziebottoms.github.io#readme"
 }
