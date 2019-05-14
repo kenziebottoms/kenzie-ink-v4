@@ -42,6 +42,12 @@ angular.module('io').controller('AchievementCtrl', function($scope) {
       description: 'Write your own color theme for a text editor.',
     },
     {
+      title: 'Goodwill Hunting',
+      icon: 'toys',
+      description:
+        'Earn 5000 points in the <a target="blank" href="https://www.gish.com/">Greatest International Scavenger Hunt</a>.',
+    },
+    {
       title: 'Perfectionist',
       icon: 'access_time',
       description: 'Spend more than 50 hours on a single piece of art.',
